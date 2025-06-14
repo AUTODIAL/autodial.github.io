@@ -2,3 +2,8 @@
 ---
 
 @import "jekyll-theme-slate";
+
+// Custom CSS to increase the font size of the nav bar
+#sidebar ul li a {
+  font-size: 1.25em;
+}
