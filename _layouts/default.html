@@ -19,6 +19,14 @@
           {% if site.github.is_project_page %}
             <a id="forkme_banner" href="{{ site.github.repository_url }}">View on GitHub</a>
           {% endif %}
+          <nav id="navbar">
+            <ul>
+              <li><a href="{{ '/' | relative_url }}">Home</a></li>
+              <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+              <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+              <!-- Add more links as needed -->
+            </ul>
+          </nav>
 
           <h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1>
           <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
