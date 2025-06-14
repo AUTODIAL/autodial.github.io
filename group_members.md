@@ -64,6 +64,10 @@ layout: default
     <img src="/assets/images/people/Ali_Jaberi.jpg" alt="Ali Jaberi" style="width:100%;max-width:180px;display:block;margin:auto;">
     <p style="text-align:center;margin-top:10px;">Ali Jaberi<br><span style="font-size:0.9em;">AUTODIal Alumnus <br> Now at NRCan</span></p>
   </div>
+  <div> 
+    <img src="/assets/images/people/Changjun_Cheng.jpg" alt="Changjun Cheng" style="width:100%;max-width:180px;display:block;margin:auto;">
+    <p style="text-align:center;margin-top:10px;">Changjun Cheng<br><span style="font-size:0.9em;">Post Doc</span></p>
+  </div>
 
     <!-- <div> 
         <img src="/assets/images/people/shayan.jpg" alt="Shayan Mousavi" style="width:100%;max-width:180px;display:block;margin:auto;">
