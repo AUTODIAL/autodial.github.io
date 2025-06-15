@@ -1,44 +1,51 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: 'en-US' }}">
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <title>{{ site.title }} Blog</title>
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    {% seo %}
-    {% include head-custom.html %}
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{ page.title }} | Dzhavat Ushev</title>
+
+    <meta
+      name="google-site-verification"
+      content="myIv9g0szZwjZ8dYBtedNqm58wtN50DR2xIBVdFRcro"
+    />
+
+    <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg" />
+
+    <link href="/assets/css/rouge-github.css" rel="stylesheet" />
+    <link href="/assets/css/custom.css" rel="stylesheet" />
+
+    <link
+      rel="alternate"
+      type="application/atom+xml"
+      title="{{ site.title }}"
+      href="/feed.xml"
+    />
+
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
   </head>
-  <body>
-    <div id="header_wrap" class="outer">
-      <header class="inner">
-        <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
-        <h2>{{ site.description }}</h2>
-      </header>
-    </div>
+  <body class="single-post">
+    {% include header.html %}
 
-    <div id="main_content_wrap" class="outer" style="max-width: 800px; margin: 0 auto;">
-      <section id="main_content" class="inner">
-        <h1>Blog Posts</h1>
-        <ul style="list-style: none; padding: 0;">
-          {% for post in site.posts %}
-            <li style="margin-bottom: 2em;">
-              <h2 style="margin-bottom: 0.2em;">
-                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-              </h2>
-              <span style="color: #888; font-size: 0.9em;">
-                {{ post.date | date: "%B %d, %Y" }}
-                {% if post.author %} | by {{ post.author }}{% endif %}
-              </span>
-              <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
-            </li>
-          {% endfor %}
-        </ul>
-      </section>
-    </div>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/posts">Posts</a></li>
+        <li><a href="/thoughts">Thoughts</a></li>
+        <li><a href="/projects">Projects</a></li>
+        <li><a href="/uses">Uses</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+    </nav>
 
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
-      </footer>
-    </div>
+    <main>
+      <article>
+        <h2>{{ page.title }}</h2>
+        {% include published.html %} {{ content }} {% include
+        share-on-social-media.html %}
+      </article>
+    </main>
+
+    <script src="/assets/js/main.js"></script>
   </body>
 </html>
