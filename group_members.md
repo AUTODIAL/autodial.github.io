@@ -28,9 +28,17 @@ layout: default
     <img src="/assets/images/people/Zhaoyang_Zhao.jpg" alt="Zhaoyang Zhao" style="width:100%;max-width:180px;display:block;margin:auto;">
     <p style="text-align:center;margin-top:10px;">Zhaoyang Zhao<br><span style="font-size:0.9em;">Post Doc</span></p>
   </div>
+  <div> 
+    <img src="/assets/images/people/Ben.jpg" alt="Benhour Amirian" style="width:100%;max-width:180px;display:block;margin:auto;">
+    <p style="text-align:center;margin-top:10px;">Benhour Amirian<br><span style="font-size:0.9em;">Post Doc</span></p>
+  </div>
+  <div> 
+    <img src="/assets/images/people/Hao_Wan.jpg" alt="Hao Wan " style="width:100%;max-width:180px;display:block;margin:auto;">
+    <p style="text-align:center;margin-top:10px;">Hao Wan<br><span style="font-size:0.9em;">Post Doc</span></p>
+  </div>
 </div>
 
-### Ph.D. Students
+### Graduate Students
 
 <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; justify-items: center; align-items: start; max-width: 1000px; margin: 40px auto;">
 
@@ -51,7 +59,11 @@ layout: default
     <img src="/assets/images/people/Runze_Zhang.jpg" alt="Runze Zhang" style="width:100%;max-width:180px;display:block;margin:auto;">
     <p style="text-align:center;margin-top:10px;">Runze Zhang<br><span style="font-size:0.9em;">Ph.D. Student</span></p>
   </div>
-
+  <div> 
+    <img src="/assets/images/people/Rafael.jpg" alt="Rafael Espinosa Castañeda" style="width:100%;max-width:180px;display:block;margin:auto;">
+    <p style="text-align:center;margin-top:10px;">Rafael Espinosa Castañeda<br><span style="font-size:0.9em;">Ph.D. Student</span></p>
+  </div>
+  
 
 
 
