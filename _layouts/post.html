@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en-US' }}">
+  <head>
+    <meta charset="UTF-8">
+    <title>{{ site.title }} Blog</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    {% seo %}
+    {% include head-custom.html %}
+  </head>
+  <body>
+    <div id="header_wrap" class="outer">
+      <header class="inner">
+        <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+        <h2>{{ site.description }}</h2>
+      </header>
+    </div>
+
+    <div id="main_content_wrap" class="outer" style="max-width: 800px; margin: 0 auto;">
+      <section id="main_content" class="inner">
+        <h1>Blog Posts</h1>
+        <ul style="list-style: none; padding: 0;">
+          {% for post in site.posts %}
+            <li style="margin-bottom: 2em;">
+              <h2 style="margin-bottom: 0.2em;">
+                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+              </h2>
+              <span style="color: #888; font-size: 0.9em;">
+                {{ post.date | date: "%B %d, %Y" }}
+                {% if post.author %} | by {{ post.author }}{% endif %}
+              </span>
+              <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
+            </li>
+          {% endfor %}
+        </ul>
+      </section>
+    </div>
+
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
+      </footer>
+    </div>
+  </body>
+</html>
