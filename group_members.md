@@ -36,6 +36,10 @@ layout: default
     <img src="/assets/images/people/Hao_Wan.jpg" alt="Hao Wan " style="width:100%;max-width:180px;display:block;margin:auto;">
     <p style="text-align:center;margin-top:10px;">Hao Wan<br><span style="font-size:0.9em;">Post Doc</span></p>
   </div>
+  <div> 
+    <img src="/assets/images/people/Suhas.jpg" alt="Suhas Mahesh " style="width:100%;max-width:180px;display:block;margin:auto;">
+    <p style="text-align:center;margin-top:10px;">Suhas Mahesh<br><span style="font-size:0.9em;">Post Doc</span></p>
+  </div>
 </div>
 
 ### Graduate Students
@@ -63,7 +67,7 @@ layout: default
     <img src="/assets/images/people/Rafael.jpg" alt="Rafael Espinosa Castañeda" style="width:100%;max-width:180px;display:block;margin:auto;">
     <p style="text-align:center;margin-top:10px;">Rafael Espinosa Castañeda<br><span style="font-size:0.9em;">Ph.D. Student</span></p>
   </div>
-  
+
 
 
 
