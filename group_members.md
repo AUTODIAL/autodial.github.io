@@ -2,8 +2,7 @@
 layout: default
 ---
 # Group Members and Alumni
-<img src="/assets/images/Group_Picture_Winter_2024.jpg" alt="Group Picture Winter 2024" style="width:100%;max-width:700px;display:block;margin:auto;">
-<p style="text-align:center;">AutoDIAL Group Picture, Winter 2024</p>
+
 
   <div>
     <img src="/assets/images/people/Jae.jpg" alt="Jason Hattrick-Simpers" style="width:100%;max-width:400px;display:block;margin:auto;">

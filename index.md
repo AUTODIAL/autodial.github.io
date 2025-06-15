@@ -11,7 +11,7 @@ We build tools, models, and systems that bridge the gap between theoretical pred
 - Trustworthy AI
 - Open Science
 
-<img src="/assets/images/No_Absolute_Truth.JPEG" alt="No Absolute Truth" style="width:50%;max-width:600px;display:block;margin:auto;">
-
+<img src="/assets/images/Group_Picture_Winter_2024.jpg" alt="Group Picture Winter 2024" style="width:100%;max-width:700px;display:block;margin:auto;">
+<p style="text-align:center;">AutoDIAL Group Picture, Winter 2024</p>
 
 <!-- [Link to another page](./another-page.html). -->
