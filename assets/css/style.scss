@@ -8,11 +8,35 @@
   font-size: 1.25em;
 }
 
+/* Layout fixes */
+#main_content_wrap {
+  min-height: calc(100vh - 300px);
+}
+
+#main_content {
+  max-width: none;
+  margin: 0;
+}
+
+#header_wrap {
+  min-height: auto;
+}
+
+/* Ensure proper flexbox behavior */
+#main_content_wrap.outer {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#sidebar, #main_content {
+  box-sizing: border-box;
+}
+
 /* Mobile responsive styles */
 @media (max-width: 768px) {
   /* Header adjustments */
   #header_wrap {
-    padding: 20px 10px 0px 10px !important;
+    padding: 20px 20px 0px 20px !important;
     min-width: auto !important;
   }
   
@@ -55,7 +79,7 @@
   /* Main content layout */
   #main_content_wrap {
     flex-direction: column !important;
-    padding: 10px;
+    padding: 10px 20px !important;
   }
   
   #sidebar {
@@ -88,7 +112,7 @@
   }
   
   #main_content {
-    padding: 20px 10px !important;
+    padding: 20px 0px !important;
   }
   
   /* Grid layouts for group members */

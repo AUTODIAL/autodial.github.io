@@ -14,8 +14,8 @@
   <body>
 
     <!-- HEADER -->
-    <div id="header_wrap" class="outer" style="min-width:200px;padding:50px 0px 0px 200px;">
-        <header class="outer">
+    <div id="header_wrap" class="outer" style="padding:50px 50px 0px 50px;">
+        <header class="inner">
           <!-- {% if site.github.is_project_page %} -->
           <a id="forkme_banner" href="{{ site.github.repository_url }}">View on GitHub</a>
           <!-- {% endif %} -->
@@ -41,8 +41,8 @@
     </div>
 
     <!-- MAIN CONTENT -->
-<div id="main_content_wrap" class="outer" style="display: flex;">
-  <nav id="sidebar" style="min-width:200px;max-width:250px;padding:50px 0px 0px 200px;">
+<div id="main_content_wrap" class="outer" style="display: flex; padding: 0 50px;">
+  <nav id="sidebar" style="min-width:200px;max-width:250px;padding:50px 20px 0px 0px;">
     <ul style="list-style:none;padding:0;">
       <li><a href="{{ '/' | relative_url }}">Home</a></li>
       <!-- <li><a class="btn btn-rss" href="/feed.xml" target="_blank">News</a></li> -->
@@ -54,13 +54,13 @@
       <!-- Add more links as needed -->
     </ul>
   </nav>
-  <section id="main_content" class="inner" style="flex:1;">
+  <section id="main_content" style="flex:1; padding: 40px 0px 40px 20px;">
     {{ content }}
   </section>
 </div>
 
     <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
+    <div id="footer_wrap" class="outer" style="padding: 0 50px;">
       <footer class="inner">
         {% if site.github.is_project_page %}
         <p class="copyright">{{ site.title | default: site.github.repository_name }} maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
