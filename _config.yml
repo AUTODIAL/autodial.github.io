@@ -3,5 +3,10 @@ description: Department of Materials Science and Engineering, University of Toro
 show_downloads: false
 google_analytics:
 theme: jekyll-theme-slate
+
+# Social media preview image
+image: /assets/images/nulla_bw.png
+logo: /assets/images/nulla_bw.png
+
 plugins:
   - jekyll-feed
