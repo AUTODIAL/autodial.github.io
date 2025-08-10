@@ -3,40 +3,40 @@ layout: default
 ---
 # Group Members and Alumni
 
-
   <div>
     <img src="/assets/images/people/Jae.jpg" alt="Jason Hattrick-Simpers" style="width:100%;max-width:400px;display:block;margin:auto;">
     <p style="text-align:center;margin-top:10px;">Jason Hattrick-Simpers<br><span style="font-size:0.9em;">Principle Investigator</span></p>
   </div>
 
 ### Post Docs
+
 <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; justify-items: center; align-items: start; max-width: 1000px; margin: 40px auto;">
-  <div> 
+  <div>
     <img src="/assets/images/people/Yutong_Liu.jpg" alt="Yutong Liu" style="width:100%;max-width:180px;display:block;margin:auto;">
     <p style="text-align:center;margin-top:10px;">Yutong Liu<br><span style="font-size:0.9em;">Post Doc</span></p>
   </div>
 
-  <div> 
+  <div>
     <img src="/assets/images/people/Changjun_Cheng.jpg" alt="Changjun Cheng" style="width:100%;max-width:180px;display:block;margin:auto;">
     <p style="text-align:center;margin-top:10px;">Changjun Cheng<br><span style="font-size:0.9em;">Post Doc</span></p>
   </div>
-    <div> 
+    <div>
     <img src="/assets/images/people/Ashley_Dale.jpg" alt="Ashley Dale" style="width:100%;max-width:180px;display:block;margin:auto;">
     <p style="text-align:center;margin-top:10px;">Ashley Dale<br><span style="font-size:0.9em;">Post Doc</span></p>
   </div>
-  <div> 
+  <div>
     <img src="/assets/images/people/Zhaoyang_Zhao.jpg" alt="Zhaoyang Zhao" style="width:100%;max-width:180px;display:block;margin:auto;">
     <p style="text-align:center;margin-top:10px;">Zhaoyang Zhao<br><span style="font-size:0.9em;">Post Doc</span></p>
   </div>
-  <div> 
+  <div>
     <img src="/assets/images/people/Ben.jpg" alt="Benhour Amirian" style="width:100%;max-width:180px;display:block;margin:auto;">
     <p style="text-align:center;margin-top:10px;">Benhour Amirian<br><span style="font-size:0.9em;">Post Doc</span></p>
   </div>
-  <div> 
+  <div>
     <img src="/assets/images/people/Hao_Wan.jpg" alt="Hao Wan " style="width:100%;max-width:180px;display:block;margin:auto;">
     <p style="text-align:center;margin-top:10px;">Hao Wan<br><span style="font-size:0.9em;">Post Doc</span></p>
   </div>
-  <div> 
+  <div>
     <img src="/assets/images/people/Suhas.jpg" alt="Suhas Mahesh " style="width:100%;max-width:180px;display:block;margin:auto;">
     <p style="text-align:center;margin-top:10px;">Suhas Mahesh<br><span style="font-size:0.9em;">Post Doc</span></p>
   </div>
@@ -59,18 +59,14 @@ layout: default
     <img src="/assets/images/people/Qiuyu_(Sara)_Shi.jpg" alt="Qiuyu (Sara) Shi" style="width:100%;max-width:180px;display:block;margin:auto;">
     <p style="text-align:center;margin-top:10px;">Qiuyu (Sara) Shi<br><span style="font-size:0.9em;">Ph.D. Student</span></p>
   </div>
-  <div> 
+  <div>
     <img src="/assets/images/people/Runze_Zhang.jpg" alt="Runze Zhang" style="width:100%;max-width:180px;display:block;margin:auto;">
     <p style="text-align:center;margin-top:10px;">Runze Zhang<br><span style="font-size:0.9em;">Ph.D. Student</span></p>
   </div>
-  <div> 
-    <img src="/assets/images/people/Rafael.jpg" alt="Rafael Espinosa Castañeda" style="width:100%;max-width:180px;display:block;margin:auto;">
+  <div>
+    <img src="/assets/images/people/RafaelEspinosaCastanedaPhoto.jpg" alt="Rafael Espinosa Castañeda" style="width:100%;max-width:180px;display:block;margin:auto;">
     <p style="text-align:center;margin-top:10px;">Rafael Espinosa Castañeda<br><span style="font-size:0.9em;">Ph.D. Student</span></p>
   </div>
-
-
-
-
 
     <!-- <div> 
         <img src="/assets/images/people/shayan.jpg" alt="Shayan Mousavi" style="width:100%;max-width:180px;display:block;margin:auto;">
@@ -81,18 +77,18 @@ layout: default
         <p style="text-align:center;margin-top:10px;">Yang Bai<br><span style="font-size:0.9em;">Collaborator</span></p>
     </div> -->
 
-
 </div>
 
 ### Alumni
+
 <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; justify-items: center; align-items: start; max-width: 1000px; margin: 40px auto;">
   <div>
     <img src="/assets/images/people/Katherine_Lei.jpg" alt="Katherine Lei" style="width:100%;max-width:180px;display:block;margin:auto;">
     <p style="text-align:center;margin-top:10px;">Katherine Lei<br><span style="font-size:0.9em;">AutoDIAL Alumnus</span></p>
   </div>
-    <div> 
+    <div>
     <img src="/assets/images/people/Ali_Jaberi.jpg" alt="Ali Jaberi" style="width:100%;max-width:180px;display:block;margin:auto;">
-    <p style="text-align:center;margin-top:10px;">Ali Jaberi<br><span style="font-size:0.9em;">AutoDIAL Alumnus <br> Now at NRCan</span></p>
+    <p style="text-align:center;margin-top:10px;">Ali Jaberi<br><span style="font-size:0.9em;">AutoDIAL Alumnus <br> Now at NRC</span></p>
   </div>
     <div>
     <img src="/assets/images/people/Hooman_Chamani.jpg" alt="Hooman Chamani" style="width:100%;max-width:180px;display:block;margin:auto;">
@@ -102,12 +98,8 @@ layout: default
     <img src="/assets/images/people/Kangming_Li.JPG" alt="Kangming Li" style="width:100%;max-width:180px;display:block;margin:auto;">
     <p style="text-align:center;margin-top:10px;">Kangming Li<br><span style="font-size:0.9em;">AutoDIAL Alumnus <br> Now at KAUST</span></p>
   </div>
-    <div>
-    <img src="/assets/images/people/Eddie_Kim.jpg" alt="Eddie Kim" style="width:100%;max-width:180px;display:block;margin:auto;">
-    <p style="text-align:center;margin-top:10px;">Eddie Kim<br><span style="font-size:0.9em;"> AutoDIAL Alumnus <br>Now at Cohere</span></p>
-  </div>
   <div>
     <img src="/assets/images/people/Amin.jpg" alt="Amin Sadeghi" style="width:100%;max-width:180px;display:block;margin:auto;">
     <p style="text-align:center;margin-top:10px;">Amin Sadeghi<br><span style="font-size:0.9em;">AutoDIAL Alumnus <br> Now at Carbon Engineering</span></p>
   </div>
- </div> 
+ </div>
