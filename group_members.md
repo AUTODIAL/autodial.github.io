@@ -33,7 +33,7 @@ layout: default
     <p style="text-align:center;margin-top:10px;">Benhour Amirian<br><span style="font-size:0.9em;">Post Doc</span></p>
   </div>
   <div>
-    <img src="/assets/images/people/Hao_Wan.jpg" alt="Hao Wan " style="width:100%;max-width:180px;display:block;margin:auto;">
+    <img src="/assets/images/people/Hao_Wan.png" alt="Hao Wan " style="width:100%;max-width:180px;display:block;margin:auto;">
     <p style="text-align:center;margin-top:10px;">Hao Wan<br><span style="font-size:0.9em;">Post Doc</span></p>
   </div>
   <div>
