@@ -14,13 +14,13 @@
   <body>
 
     <!-- HEADER -->
-    <div id="header_wrap" class="outer" style="padding:50px 50px 0px 50px;">
+    <div id="header_wrap" class="outer" style="padding:0px;">
         <header class="inner">
           <!-- {% if site.github.is_project_page %} -->
           <a id="forkme_banner" href="{{ site.github.repository_url }}">View on GitHub</a>
           <!-- {% endif %} -->
 
-      <div class="header-content" style="display: flex; align-items: center; gap: 20px;">
+      <div class="header-content" style="display: flex; align-items: center; gap: 20px; padding: 50px;">
         <img src="/assets/images/nulla_bw.png" alt="Group Logo" style="height:150px; outline: none; box-shadow: none; border: none;">
         <div class="header-text"> 
           <h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1>
@@ -41,8 +41,8 @@
     </div>
 
     <!-- MAIN CONTENT -->
-<div id="main_content_wrap" class="outer" style="display: flex; padding: 0 50px;">
-  <nav id="sidebar" style="min-width:200px;max-width:250px;padding:50px 20px 0px 0px;">
+<div id="main_content_wrap" class="outer" style="display: flex; padding: 0;">
+  <nav id="sidebar" style="min-width:200px;max-width:250px;">
     <ul style="list-style:none;padding:0;">
       <li><a href="{{ '/' | relative_url }}">Home</a></li>
       <!-- <li><a class="btn btn-rss" href="/feed.xml" target="_blank">News</a></li> -->
@@ -54,7 +54,7 @@
       <!-- Add more links as needed -->
     </ul>
   </nav>
-  <section id="main_content" style="flex:1; padding: 40px 0px 40px 20px;">
+  <section id="main_content" style="flex:1; padding: 40px 50px 40px 20px;">
     {{ content }}
   </section>
 </div>
