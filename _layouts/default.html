@@ -20,9 +20,9 @@
           <a id="forkme_banner" href="{{ site.github.repository_url }}">View on GitHub</a>
           <!-- {% endif %} -->
 
-      <div class="header-content" style="display: flex; align-items: center; gap: 20px; padding: 50px;">
-        <img src="/assets/images/nulla_bw.png" alt="Group Logo" style="height:150px; outline: none; box-shadow: none; border: none;">
-        <div class="header-text"> 
+      <div class="header-content">
+        <img src="/assets/images/nulla_bw.png" alt="Group Logo" class="header-logo">
+        <div class="header-text" style="flex: 1; min-width: 0;"> 
           <h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1>
           <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
         </div>
@@ -41,7 +41,7 @@
     </div>
 
     <!-- MAIN CONTENT -->
-<div id="main_content_wrap" class="outer" style="display: flex; padding: 0;">
+<div id="main_content_wrap" class="outer" style="display: flex; padding: 0; max-width: 1200px; margin: 0 auto;">
   <nav id="sidebar" style="min-width:200px;max-width:250px;">
     <ul style="list-style:none;padding:0;">
       <li><a href="{{ '/' | relative_url }}">Home</a></li>
@@ -51,6 +51,8 @@
       <li><a href="{{ '/group_members' | relative_url }}">Group Members</a></li>
       <li><a href="{{ '/openings' | relative_url }}">Openings</a></li>
       <li><a href="{{ '/contact' | relative_url }}">Contact</a></li>
+      <li style="text-align: center;">-</li>
+      <li><a href="{{ '/AutoEIS' | relative_url }}">AutoEIS Website</a></li>
       <!-- Add more links as needed -->
     </ul>
   </nav>
