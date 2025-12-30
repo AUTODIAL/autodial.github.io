@@ -34,10 +34,14 @@
           <!-- {% endif %} -->
 
       <div class="header-content">
-        <img src="/assets/images/nulla_bw.png" alt="Group Logo" class="header-logo">
+        <a href="{{ '/' | relative_url }}" style="text-decoration: none;">
+          <img src="/assets/images/nulla_bw.png" alt="Group Logo" class="header-logo" style="cursor: pointer;">
+        </a>
         <div class="header-text" style="flex: 1; min-width: 0;"> 
-          <h1 id="project_title">{{ site.title | default: site.github.repository_name }}</h1>
-          <h2 id="project_tagline">{{ site.description | default: site.github.project_tagline }}</h2>
+          <a href="{{ '/' | relative_url }}" style="text-decoration: none; color: inherit;">
+            <h1 id="project_title" style="cursor: pointer;">{{ site.title | default: site.github.repository_name }}</h1>
+            <h2 id="project_tagline" style="cursor: pointer;">{{ site.description | default: site.github.project_tagline }}</h2>
+          </a>
         </div>
       </div>
 
