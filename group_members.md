@@ -332,7 +332,7 @@ const bioData = {
   },
   "Yonatan Kurniawan": {
     title: "Post Doc",
-    bio: "Yonatan Kurniawan is a postdoctoral researcher working on materials science and artificial intelligence for autonomous science."
+    bio: "<p>Yonatan Kurniawan joined the group in October 2025. His research focuses on applying active learning, uncertainty quantification, and sloppy model analysis to electrochemical impedance spectroscopy, aiming to improve model performance and interpretability for battery material discovery. He earned his Ph.D. in Physics from Brigham Young University, where he used information geometry to investigate uncertainty in interatomic models. His broader interests include integrating uncertainty quantification and active learning through sloppy model analysis and information geometry to enhance model predictions, uncertainties, and interpretability.</p><p>Outside of work, Yonatan enjoys playing video games, watching anime, playing guitar, and solving Sudoku puzzles.</p>"
   },
   "Daniel Persaud": {
     title: "Ph.D. Student",
