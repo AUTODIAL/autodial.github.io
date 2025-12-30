@@ -24,35 +24,51 @@ img[alt]:hover {
   box-shadow: 0 8px 25px rgba(234, 88, 12, 0.3);
 }
 
-/* Clickable indicator - double arrow */
+/* Elegant clickable indicator - double arrow */
 .person-card {
   position: relative;
 }
 
+.person-card img[alt] {
+  position: relative;
+}
+
 .person-card::after {
-  content: "»";
+  content: "⟫";
   position: absolute;
-  top: 10px;
-  right: 10px;
-  background: rgba(234, 88, 12, 0.9);
+  top: 2px;
+  left: calc(100% - 6px);
+  background: linear-gradient(135deg, rgba(234, 88, 12, 0.9), rgba(220, 38, 38, 0.9));
   color: white;
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
-  font-weight: bold;
-  opacity: 0.7;
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: -1px;
+  opacity: 0.8;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   pointer-events: none;
   z-index: 10;
+  box-shadow: 0 2px 8px rgba(234, 88, 12, 0.3);
+  backdrop-filter: blur(4px);
+  max-width: 180px;
 }
 
 .person-card:hover::after {
   opacity: 1;
-  transform: scale(1.1);
+  transform: scale(1.15) rotate(5deg);
+  box-shadow: 0 4px 16px rgba(234, 88, 12, 0.4);
+}
+
+/* Special positioning for Jason's larger PI card */
+.person-card:has(img[src*="Jae.jpg"])::after {
+  top: 2px;
+  left: calc(100% - 34px);
+  max-width: 450px;
 }
 
 /* Section headings with color accent */
