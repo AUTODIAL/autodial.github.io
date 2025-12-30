@@ -8,5 +8,11 @@ theme: jekyll-theme-slate
 image: /assets/images/nulla_bw.png
 logo: /assets/images/nulla_bw.png
 
+# Collections configuration
+collections:
+  news:
+    output: true
+    permalink: /:collection/:year/:month/:day/:title/
+
 plugins:
   - jekyll-feed
