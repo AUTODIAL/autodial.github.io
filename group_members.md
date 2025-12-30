@@ -15,12 +15,44 @@ img[alt] {
   cursor: pointer;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: relative;
 }
 
 img[alt]:hover {
   filter: grayscale(0%);
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(234, 88, 12, 0.3);
+}
+
+/* Clickable indicator - double arrow */
+.person-card {
+  position: relative;
+}
+
+.person-card::after {
+  content: "»";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(234, 88, 12, 0.9);
+  color: white;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+  opacity: 0.7;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.person-card:hover::after {
+  opacity: 1;
+  transform: scale(1.1);
 }
 
 /* Section headings with color accent */
