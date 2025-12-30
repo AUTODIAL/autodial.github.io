@@ -1,0 +1,11 @@
+To add new blog posts, create new markdown files in the 
+_news directory with this format:
+
+---
+layout: default
+title: "Your Post Title"
+date: YYYY-MM-DD
+excerpt: "Brief summary of your post"
+---
+
+# Your content here...
