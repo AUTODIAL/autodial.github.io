@@ -37,7 +37,8 @@ img[alt]:hover {
   content: "⟫";
   position: absolute;
   top: 2px;
-  left: calc(100% - 6px);
+  left: 50%;
+  transform: translateX(calc(90px - 14px));
   background: linear-gradient(135deg, rgba(234, 88, 12, 0.9), rgba(220, 38, 38, 0.9));
   color: white;
   width: 28px;
@@ -55,20 +56,12 @@ img[alt]:hover {
   z-index: 10;
   box-shadow: 0 2px 8px rgba(234, 88, 12, 0.3);
   backdrop-filter: blur(4px);
-  max-width: 180px;
 }
 
 .person-card:hover::after {
   opacity: 1;
-  transform: scale(1.15) rotate(5deg);
+  transform: translateX(calc(90px - 14px)) scale(1.15) rotate(5deg);
   box-shadow: 0 4px 16px rgba(234, 88, 12, 0.4);
-}
-
-/* Special positioning for Jason's larger PI card */
-.person-card:has(img[src*="Jae.jpg"])::after {
-  top: 2px;
-  left: calc(100% - 34px);
-  max-width: 450px;
 }
 
 /* Section headings with color accent */
@@ -520,11 +513,12 @@ document.addEventListener('keydown', function(event) {
 
 # Group Members and Alumni
 
+### Principle Investigator
+
   <div class="person-card" style="text-align: center; margin: 2rem auto; max-width: 500px;">
-    <img src="/assets/images/people/Jae.jpg" alt="Jason Hattrick-Simpers" style="width:100%;max-width:450px;display:block;margin:auto;border-radius:12px;">
+    <img src="/assets/images/people/Jae.jpg" alt="Jason Hattrick-Simpers" style="width:100%;max-width:180px;display:block;margin:auto;border-radius:12px;">
     <div class="person-text">
       <div class="person-name">Jason Hattrick-Simpers</div>
-      <div class="person-title">Principal Investigator</div>
     </div>
   </div>
 
