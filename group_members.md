@@ -302,7 +302,7 @@ const bioData = {
     }
   },
   "Ashley Dale": {
-    title: "Post Doc",
+    title: "AutoDIAL Alumnus - Now a Post Doc at MIT",
     bio: "<p>Ashley Dale joined AutoDIAL as a Schmidt AI in Science Postdoctoral Fellow in October 2024. Her research focuses on Trustworthy AI Tools for Science, explainable uncertainty quantification for foundation models, and developing trustworthy autonomous laboratory platforms. In 2024, Ashley earned a Ph.D. in physics from Indiana University and a Ph.D. from Purdue University in electrical engineering with a topic in AI for computer vision.</p><p>Her personal website is found <a href='https://daleas0120.github.io/' target='_blank'>here</a>.",
     social:{
       linkedin:"https://www.linkedin.com/in/ashley-s-dale/",
@@ -352,7 +352,7 @@ const bioData = {
     }
   },
   "Runze Zhang": {
-    title: "Ph.D. Student",
+    title: "AutoDIAL Alumnus",
     bio: "<p>Runze Zhang joined the group in January 2022 and has been on a mission to teach machines how to do materials analysis. His research focuses on building open-source tools that facilitate materials analysis by reducing human bias and minimizing the need for a PhD-level brain to interpret experimental data. By blending statistical reasoning with machine learning, he hopes to make materials data not only more trustworthy and reproducible, but also less mysterious.</p><p>Before joining the group, Runze earned his BASc degree in Polymer Engineering and Science from the Harbin Institute of Technology. As an undergraduate, he worked on projects involving the synthesis, scale-up, modification, and application of polyhedral oligomeric silsesquioxanes.</p><p>Outside of research, Runze enjoys playing piano and chilling with his cats.</p>",
     social:{
       linkedin: "https://www.linkedin.com/in/runze-zhang-874442243/",
@@ -417,6 +417,22 @@ const bioData = {
   "Shayan Mousavi": {
     title: "AutoDIAL Alumnus - Now at Sanofi",
     bio: "Shayan Mousavi is an AutoDIAL alumnus who now works at Sanofi, applying his expertise in pharmaceutical research and development."
+  },
+  "Ang (Leo) Li":{
+    title: "Post Doc",
+    bio: "Ang (Leo) Li joined the group in June 2026 as a Vector Distinguished Postdoctoral Fellow, hosted by Professors Jason Hattrick-Simpers and Anatole von Lilienfeld. He focuses on developing self-driving laboratories. He received his BASc in Computer Engineering in 2021 and his PhD in Mechanical Engineering in 2026 from the University of Toronto."
+  },
+  "Jingyan Zhang":{
+    title: "Post Doc",
+    bio: "Jingyan Zhang joined the group as a Postdoctoral Fellow in June 2026. Her current research focuses on AI-driven materials acceleration and electrochemical metal recovery through self-driving experimental platforms."
+  },
+  "Quentin":{
+    title: "Automation Specialist",
+    bio:""
+  },
+  "Ghazal":{
+    title:"Ph.D. Student",
+    bio:""
   }
 };
 
@@ -525,62 +541,70 @@ document.addEventListener('keydown', function(event) {
 ### Post Docs
 
 <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; justify-items: center; align-items: start; max-width: 1000px; margin: 40px auto;">
+
   <div class="person-card">
     <img src="/assets/images/people/Yutong_Liu.jpg" alt="Yutong Liu" style="width:100%;max-width:180px;display:block;margin:auto;">
     <div class="person-text">
       <div class="person-name">Yutong Liu</div>
-
     </div>
   </div>
+
   <div class="person-card">
     <img src="/assets/images/people/Changjun_Cheng.jpg" alt="Changjun Cheng" style="width:100%;max-width:180px;display:block;margin:auto;">
     <div class="person-text">
       <div class="person-name">Changjun Cheng</div>
-
     </div>
   </div>
-  <div class="person-card">
-    <img src="/assets/images/people/Ashley_Dale.jpg" alt="Ashley Dale" style="width:100%;max-width:180px;display:block;margin:auto;">
-    <div class="person-text">
-      <div class="person-name">Ashley Dale</div>
 
-    </div>
-  </div>
   <div class="person-card">
     <img src="/assets/images/people/Hao_Wan.png" alt="Hao Wan" style="width:100%;max-width:180px;display:block;margin:auto;">
     <div class="person-text">
       <div class="person-name">Hao Wan</div>
-
     </div>
   </div>
+
   <div class="person-card">
     <img src="/assets/images/people/Dan.png" alt="Dan McHaffie" style="width:100%;max-width:180px;display:block;margin:auto;">
     <div class="person-text">
       <div class="person-name">Dan McHaffie</div>
-
     </div>
   </div>
+
   <div class="person-card">
     <img src="/assets/images/people/Luke.jpg" alt="Luke Menezes" style="width:100%;max-width:180px;display:block;margin:auto;">
     <div class="person-text">
       <div class="person-name">Luke Menezes</div>
-
     </div>
   </div>
+
   <div class="person-card">
     <img src="/assets/images/people/YIN.png" alt="YIN ZHU" style="width:100%;max-width:180px;display:block;margin:auto;">
     <div class="person-text">
-      <div class="person-name">YIN ZHU</div>
-
+      <div class="person-name">Yin Zhu</div>
     </div>
   </div>
+
   <div class="person-card">
     <img src="/assets/images/people/Yonatan.jpg" alt="Yonatan Kurniawan" style="width:100%;max-width:180px;display:block;margin:auto;">
     <div class="person-text">
       <div class="person-name">Yonatan Kurniawan</div>
-
     </div>
   </div>
+
+  <div class="person-card">
+    <img src="/assets/images/people/Jingyan_Zhang.jpg", alt="Jingyan Zhang", style="width:100%;max-width:180px;display:bock;margin:auto;">
+    <div class="person-text">
+      <div class="person-name">Jingyan Zhang</div>
+    </div>
+  </div>
+
+  <div class="person-card">
+    <img src="/assets/images/people/Ang_Li.jpg", alt="Ang (Leo) Li", style="width:100%;max-width:180px;display:bock;margin:auto;">
+    <div class="person-text">
+      <div class="person-name">Ang (Leo) Li</div>
+    </div>
+  </div>
+
 </div>
 
 ### Graduate Students
@@ -591,69 +615,77 @@ document.addEventListener('keydown', function(event) {
     <img src="/assets/images/people/Daniel.jpg" alt="Daniel Persaud" style="width:100%;max-width:180px;display:block;margin:auto;">
     <div class="person-text">
       <div class="person-name">Daniel Persaud</div>
-
     </div>
   </div>
+
   <div class="person-card">
     <img src="/assets/images/people/Hongchen_Wang.jpg" alt="Hongchen Wang" style="width:100%;max-width:180px;display:block;margin:auto;">
     <div class="person-text">
       <div class="person-name">Hongchen Wang</div>
-
     </div>
   </div>
+
   <div class="person-card">
     <img src="/assets/images/people/Qiuyu_(Sara)_Shi.jpg" alt="Qiuyu (Sara) Shi" style="width:100%;max-width:180px;display:block;margin:auto;">
     <div class="person-text">
       <div class="person-name">Qiuyu (Sara) Shi</div>
-
     </div>
   </div>
-  <div class="person-card">
-    <img src="/assets/images/people/Runze_Zhang.jpg" alt="Runze Zhang" style="width:100%;max-width:180px;display:block;margin:auto;">
-    <div class="person-text">
-      <div class="person-name">Runze Zhang</div>
 
-    </div>
-  </div>
   <div class="person-card">
     <img src="/assets/images/people/RafaelEspinosaCastanedaPhoto.jpg" alt="Rafael Espinosa Castañeda" style="width:100%;max-width:180px;display:block;margin:auto;">
     <div class="person-text">
       <div class="person-name">Rafael Espinosa Castañeda</div>
-
     </div>
   </div>
+
+  <div class="person-card">
+    <img src="/assets/images/people/Ghazal_Shafiee.jpg" alt="Ghazal Shafiee" style="width:100%;max-width:180px;display:block;margin:auto;">
+    <div class="person-text">
+      <div class="person-name">Ghazal Shafiee</div>
+    </div>
+  </div>
+
   <div class="person-card">
     <img src="/assets/images/people/Kevin.jpg" alt="Kevin Zhang" style="width:100%;max-width:180px;display:block;margin:auto;">
     <div class="person-text">
       <div class="person-name">Kevin Zhang</div>
-
     </div>
   </div>
+
   <div class="person-card">
     <img src="/assets/images/people/Taha.jpg" alt="Mohammad Taha" style="width:100%;max-width:180px;display:block;margin:auto;">
     <div class="person-text">
       <div class="person-name">Mohammad Taha</div>
-
     </div>
   </div>
 
-    <!-- <div> 
-        <img src="/assets/images/people/Yang.jpg" alt="Yang Bai" style="width:100%;max-width:180px;display:block;margin:auto;">
-        <p style="text-align:center;margin-top:10px;">Yang Bai<br><span style="font-size:0.9em;">Collaborator</span></p>
-    </div> -->
+</div>
+
+### Automation Specialists
+
+<div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; justify-items: center; align-items: start; max-width: 1000px; margin: 40px auto;">
+
+  <div class="person-card">
+    <img src="/assets/images/people/Quentin.jpg" alt="Quentin" style="width:100%;max-width:180px;display:block;margin:auto;">
+    <div class="person-text">
+      <div class="person-name">Quentin</div>
+    </div>
+  </div>
 
 </div>
 
 ### Alumni
 
 <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; justify-items: center; align-items: start; max-width: 1000px; margin: 40px auto;">
+
   <div class="person-card">
     <img src="/assets/images/people/Katherine_Lei.jpg" alt="Katherine Lei" style="width:100%;max-width:180px;display:block;margin:auto;">
     <div class="person-text">
       <div class="person-name">Katherine Lei</div>
-
     </div>
   </div>
+
   <div class="person-card">
     <img src="/assets/images/people/Ali_Jaberi.jpg" alt="Ali Jaberi" style="width:100%;max-width:180px;display:block;margin:auto;">
     <div class="person-text">
@@ -661,6 +693,7 @@ document.addEventListener('keydown', function(event) {
       <div class="person-title">National Resource Council Canada</div>
     </div>
   </div>
+
   <div class="person-card">
     <img src="/assets/images/people/Hooman_Chamani.jpg" alt="Hooman Chamani" style="width:100%;max-width:180px;display:block;margin:auto;">
     <div class="person-text">
@@ -668,6 +701,7 @@ document.addEventListener('keydown', function(event) {
       <div class="person-title">WSP in Canada</div>
     </div>
   </div>
+
   <div class="person-card">
     <img src="/assets/images/people/Kangming_Li.JPG" alt="Kangming Li" style="width:100%;max-width:180px;display:block;margin:auto;">
     <div class="person-text">
@@ -675,6 +709,7 @@ document.addEventListener('keydown', function(event) {
       <div class="person-title">King Abullah University of Science and Technology</div>
     </div>
   </div>
+
   <div class="person-card">
     <img src="/assets/images/people/Amin.jpg" alt="Amin Sadeghi" style="width:100%;max-width:180px;display:block;margin:auto;">
     <div class="person-text">
@@ -682,13 +717,14 @@ document.addEventListener('keydown', function(event) {
       <div class="person-title">Carbon Engineering</div>
     </div>
   </div>
+
   <div class="person-card">
     <img src="/assets/images/people/Zhaoyang_Zhao.jpg" alt="Zhaoyang Zhao" style="width:100%;max-width:180px;display:block;margin:auto;">
     <div class="person-text">
       <div class="person-name">Zhaoyang Zhao</div>
-
     </div>
   </div>
+
   <div class="person-card">
     <img src="/assets/images/people/Ben.jpg" alt="Benhour Amirian" style="width:100%;max-width:180px;display:block;margin:auto;">
     <div class="person-text">
@@ -696,6 +732,7 @@ document.addEventListener('keydown', function(event) {
       <div class="person-title">Apple</div>
     </div>
   </div>
+
   <div class="person-card">
     <img src="/assets/images/people/Suhas.jpg" alt="Suhas Mahesh" style="width:100%;max-width:180px;display:block;margin:auto;">
     <div class="person-text">
@@ -703,6 +740,7 @@ document.addEventListener('keydown', function(event) {
       <div class="person-title">Schmidt Sciences</div>
     </div>
   </div>
+
   <div class="person-card">
       <img src="/assets/images/people/shayan.jpg" alt="Shayan Mousavi" style="width:100%;max-width:180px;display:block;margin:auto;">
       <div class="person-text">
@@ -710,4 +748,20 @@ document.addEventListener('keydown', function(event) {
         <div class="person-title">Sanofi</div>
       </div>
   </div>
+
+  <div class="person-card">
+    <img src="/assets/images/people/Ashley_Dale.jpg" alt="Ashley Dale" style="width:100%;max-width:180px;display:block;margin:auto;">
+    <div class="person-text">
+      <div class="person-name">Ashley Dale</div>
+      <div class="person-title">MIT</div>
+    </div>
+  </div>
+
+  <div class="person-card">
+    <img src="/assets/images/people/Runze_Zhang.jpg" alt="Runze Zhang" style="width:100%;max-width:180px;display:block;margin:auto;">
+    <div class="person-text">
+      <div class="person-name">Runze Zhang</div>
+    </div>
+  </div>
+
  </div>
