@@ -432,7 +432,7 @@ const bioData = {
   },
   "Ghazal":{
     title:"Ph.D. Student",
-    bio:""
+    bio:"Ghazal is a PhD student in Materials Science and Engineering. She earned her bachelor's degree in applied chemistry from Sharif University of Technology and an MSc in chemistry from Western University."
   }
 };
 
@@ -592,14 +592,14 @@ document.addEventListener('keydown', function(event) {
   </div>
 
   <div class="person-card">
-    <img src="/assets/images/people/Jingyan_Zhang.jpg", alt="Jingyan Zhang", style="width:100%;max-width:180px;display:bock;margin:auto;">
+    <img src="/assets/images/people/Jingyan_Zhang.jpg" alt="Jingyan Zhang" style="width:100%;max-width:180px;display:block;margin:auto;">
     <div class="person-text">
       <div class="person-name">Jingyan Zhang</div>
     </div>
   </div>
 
   <div class="person-card">
-    <img src="/assets/images/people/Ang_Li.jpg", alt="Ang (Leo) Li", style="width:100%;max-width:180px;display:bock;margin:auto;">
+    <img src="/assets/images/people/Ang_Li.jpg" alt="Ang (Leo) Li" style="width:100%;max-width:180px;display:block;margin:auto;">
     <div class="person-text">
       <div class="person-name">Ang (Leo) Li</div>
     </div>
