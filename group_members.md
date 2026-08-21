@@ -263,7 +263,7 @@ h3::after {
 <div id="personModal" class="modal">
   <div class="modal-content">
     <span class="close">&times;</span>
-    <img id="modalImage" class="modal-image" src="" alt="">
+    <img id="modalImage" class="modal-image" src="" alt="" data-proofer-ignore>
     <div id="modalName" class="modal-name"></div>
     <div id="modalTitle" class="modal-title"></div>
     <div id="modalSocial" class="social-icons"></div>
