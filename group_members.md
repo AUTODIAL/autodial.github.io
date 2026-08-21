@@ -667,7 +667,7 @@ document.addEventListener('keydown', function(event) {
 <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; justify-items: center; align-items: start; max-width: 1000px; margin: 40px auto;">
 
   <div class="person-card">
-    <img src="/assets/images/people/Quentin.jpg" alt="Quentin" style="width:100%;max-width:180px;display:block;margin:auto;">
+    <img src="/assets/images/people/Quentin.png" alt="Quentin" style="width:100%;max-width:180px;display:block;margin:auto;">
     <div class="person-text">
       <div class="person-name">Quentin</div>
     </div>
