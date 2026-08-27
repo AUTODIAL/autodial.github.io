@@ -426,9 +426,9 @@ const bioData = {
     title: "Post Doc",
     bio: "Jingyan Zhang joined the group as a Postdoctoral Fellow in June 2026. Her current research focuses on AI-driven materials acceleration and electrochemical metal recovery through self-driving experimental platforms."
   },
-  "Quentin":{
+  "Quentin Currier-Moritsugu":{
     title: "Automation Specialist",
-    bio:""
+    bio:"Quentin joined the group in December 2025 as an Automated Experiment Specialist. His work focuses on developing reliable, high-throughput experimental workflows for materials discovery, including laboratory automation, robotic liquid handling, and the integration of synthesis and characterization processes. His initial work with the group has centered on high-throughput synthesis workflows for catalyst discovery.Quentin holds a Master of Applied Science in Electrical Engineering and a Bachelor of Engineering in Biomedical Engineering from Toronto Metropolitan University. His graduate research focused on the design and proof-of-concept fabrication of a novel passive wireless inductive pressure sensor, establishing an architecture suitable for future MEMS-scale miniaturization. Outside of work, Quentin enjoys canoe tripping, board games, and grappling sports."
   },
   "Ghazal":{
     title:"Ph.D. Student",
@@ -667,9 +667,9 @@ document.addEventListener('keydown', function(event) {
 <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; justify-items: center; align-items: start; max-width: 1000px; margin: 40px auto;">
 
   <div class="person-card">
-    <img src="/assets/images/people/Quentin.png" alt="Quentin" style="width:100%;max-width:180px;display:block;margin:auto;">
+    <img src="/assets/images/people/Quentin.png" alt="Quentin Currier-Moritsugu" style="width:100%;max-width:180px;display:block;margin:auto;">
     <div class="person-text">
-      <div class="person-name">Quentin</div>
+      <div class="person-name">Quentin Currier-Moritsugu</div>
     </div>
   </div>
 
