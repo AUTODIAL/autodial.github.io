@@ -276,6 +276,7 @@ console.log("JavaScript loading...");
 
 // Bio data for each person
 const bioData = {
+  <!-- PI -->
   "Jason Hattrick-Simpers": {
     title: "Principal Investigator",
     bio: "Jason Hattrick-Simpers leads the Autonomous Discovery of Alloys (AutoDIAL) research group at the University of Toronto. His research focuses on autonomous materials discovery, high-throughput experimentation, and machine learning applications in materials science.",
@@ -284,6 +285,7 @@ const bioData = {
       scholar:"https://scholar.google.com/citations?user=P3ce5ZwAAAAJ&hl=en&oi=ao"
     }
   },
+  <!-- Postdocs -->
   "Yutong Liu": {
     title: "Post Doc",
     bio: "<p>Yutong Liu joined the group in December 2023 as a postdoctoral fellow. She is currently working on autonomous materials discovery for oxygen evolution reaction (OER) catalysts using high-throughput experimentation. Yutong completed her Ph.D. in Chemistry at University of Waterloo (2018–2023), where her research focused on defect investigation in hematite photoanodes for solar water splitting. She holds a Bachelor of Science in Materials and Nanosciences from the University of Waterloo and a Bachelor of Engineering from Beijing Jiaotong University, both earned through the BJTU-UW 2+2 Joint Program (2014–2018).</p><p>Outside of work, Yutong enjoys movies, yelling at soccer games, and relaxing with her two cats.</p>",
@@ -299,15 +301,6 @@ const bioData = {
       linkedin: "https://www.linkedin.com/in/changjun-cheng-5b282a192/",
       researchgate: "https://www.researchgate.net/profile/Changjun-Cheng",
       scholar: "https://scholar.google.com/citations?user=hqUO03kAAAAJ&hl=en&oi=ao"
-    }
-  },
-  "Ashley Dale": {
-    title: "AutoDIAL Alumnus - Now a Post Doc at MIT",
-    bio: "<p>Ashley Dale joined AutoDIAL as a Schmidt AI in Science Postdoctoral Fellow in October 2024. Her research focuses on Trustworthy AI Tools for Science, explainable uncertainty quantification for foundation models, and developing trustworthy autonomous laboratory platforms. In 2024, Ashley earned a Ph.D. in physics from Indiana University and a Ph.D. from Purdue University in electrical engineering with a topic in AI for computer vision.</p><p>Her personal website is found <a href='https://daleas0120.github.io/' target='_blank'>here</a>.",
-    social:{
-      linkedin:"https://www.linkedin.com/in/ashley-s-dale/",
-      scholar:"https://scholar.google.com/citations?user=odI62RkAAAAJ&hl=en&oi=ao",
-      website:"https://daleas0120.github.io/",
     }
   },
   "Hao Wan": {
@@ -332,8 +325,22 @@ const bioData = {
   },
   "Yonatan Kurniawan": {
     title: "Post Doc",
-    bio: "<p>Yonatan Kurniawan joined the group in October 2025. His research focuses on applying active learning, uncertainty quantification, and sloppy model analysis to electrochemical impedance spectroscopy, aiming to improve model performance and interpretability for battery material discovery. He earned his Ph.D. in Physics from Brigham Young University, where he used information geometry to investigate uncertainty in interatomic models. His broader interests include integrating uncertainty quantification and active learning through sloppy model analysis and information geometry to enhance model predictions, uncertainties, and interpretability.</p><p>Outside of work, Yonatan enjoys playing video games, watching anime, playing guitar, and solving Sudoku puzzles.</p>"
+    bio: "<p>Yonatan Kurniawan joined the group in October 2025. His research focuses on applying active learning, uncertainty quantification, and sloppy model analysis to electrochemical impedance spectroscopy, aiming to improve model performance and interpretability for battery material discovery. He earned his Ph.D. in Physics from Brigham Young University, where he used information geometry to investigate uncertainty in interatomic models. His broader interests include integrating uncertainty quantification and active learning through sloppy model analysis and information geometry to enhance model predictions, uncertainties, and interpretability.</p><p>Outside of work, Yonatan enjoys playing video games, watching anime, playing guitar, and solving Sudoku puzzles.</p>",
+    social:{
+      linkedin: "https://www.linkedin.com/in/kurniawanyo/",
+      scholar: "https://scholar.google.com/citations?user=eYu4evsAAAAJ&hl=en&oi=ao",
+      website: "https://yonatank93.github.io/"
+    }
   },
+  "Ang (Leo) Li":{
+    title: "Post Doc",
+    bio: "Ang (Leo) Li joined the group in June 2026 as a Vector Distinguished Postdoctoral Fellow, hosted by Professors Jason Hattrick-Simpers and Anatole von Lilienfeld. He focuses on developing self-driving laboratories. He received his BASc in Computer Engineering in 2021 and his PhD in Mechanical Engineering in 2026 from the University of Toronto."
+  },
+  "Jingyan Zhang":{
+    title: "Post Doc",
+    bio: "Jingyan Zhang joined the group as a Postdoctoral Fellow in June 2026. Her current research focuses on AI-driven materials acceleration and electrochemical metal recovery through self-driving experimental platforms."
+  },
+  <!-- PhD Students -->
   "Daniel Persaud": {
     title: "Ph.D. Student",
     bio: "Daniel Persaud is a Ph.D. student researching autonomous materials discovery and machine learning applications in materials science."
@@ -351,15 +358,6 @@ const bioData = {
       cv: "https://drive.google.com/file/d/1kfdDXHULlfR2aVhbiOSZf4O2gldkyBk1/view?usp=sharing"
     }
   },
-  "Runze Zhang": {
-    title: "AutoDIAL Alumnus",
-    bio: "<p>Runze Zhang joined the group in January 2022 and has been on a mission to teach machines how to do materials analysis. His research focuses on building open-source tools that facilitate materials analysis by reducing human bias and minimizing the need for a PhD-level brain to interpret experimental data. By blending statistical reasoning with machine learning, he hopes to make materials data not only more trustworthy and reproducible, but also less mysterious.</p><p>Before joining the group, Runze earned his BASc degree in Polymer Engineering and Science from the Harbin Institute of Technology. As an undergraduate, he worked on projects involving the synthesis, scale-up, modification, and application of polyhedral oligomeric silsesquioxanes.</p><p>Outside of research, Runze enjoys playing piano and chilling with his cats.</p>",
-    social:{
-      linkedin: "https://www.linkedin.com/in/runze-zhang-874442243/",
-      scholar: "https://scholar.google.com/citations?hl=en&user=C8HyixEAAAAJ",
-      github: "https://github.com/RunzeZhang123"
-    }
-  },
   "Rafael Espinosa Castañeda": {
     title: "Ph.D. Student",
     bio: "<p>Rafael Espinosa Castañeda is a Ph.D. candidate in Materials Science and Engineering at the University of Toronto, working under the supervision of Professor Jason Hattrick-Simpers. Before beginning his doctoral studies, he was the director of the Data Science and Mathematics Engineering program at Tecnológico de Monterrey, Campus Querétaro. Also, he was Lecturer of Physics, Mathematics and Data Science. He received a master’s in data science from the University of Texas at Austin, a Master’s in Theoretical Physics from the University of Cambridge and a bachelor’s in physics from Universidad de las Américas Puebla. Rafael’s research mainly focuses on Multi-Objective Active Learning to accelerate the discovery of next-generation battery materials. He also actively collaborates in Large Language Models and Open-Source AI Software for Materials Science.</p>",
@@ -368,6 +366,11 @@ const bioData = {
       scholar: "https://scholar.google.com/citations?user=bUpSQoAAAAAJ&hl=en&oi=ao"
     }
   },
+  "Ghazal Shafiee":{
+    title:"Ph.D. Student",
+    bio:"Ghazal is a PhD student in Materials Science and Engineering. She earned her bachelor's degree in applied chemistry from Sharif University of Technology and an MSc in chemistry from Western University."
+  },
+  <!-- Master's Students -->
   "Kevin Zhang": {
     title: "Graduate Student",
     bio: "Kevin Zhang is a graduate student working on materials discovery and experimental design."
@@ -375,6 +378,40 @@ const bioData = {
   "Mohammad Taha": {
     title: "Graduate Student",
     bio: "Mohammad Taha is a graduate student focusing on materials science and autonomous laboratory systems."
+  },
+  "Md Shafiqul Islam": {
+    title: "Ph.D. Student",
+    bio: "<p>Md. Shafiqul Islam is a Ph.D. student in Materials Science and Engineering at the University of Toronto. His research focuses on Bayesian optimal experimental design, active learning, and uncertainty quantification to efficiently guide high-throughput materials experiments.</p><p>He holds an M.S. in Materials Science and Engineering from Texas A&M University, where his research focused on additive manufacturing of refractory high-entropy alloys, applying CALPHAD modeling and multi-objective Bayesian optimization for materials and process co-design. He earned his B.Sc. in Materials and Metallurgical Engineering from Bangladesh University of Engineering and Technology (BUET).</p>",
+    social:{
+      linkedin: "https://www.linkedin.com/in/shafiqmme/",
+      researchgate: "https://www.researchgate.net/profile/Md-Shafiqul-Islam-18",
+      scholar: "https://scholar.google.com/citations?user=2obFb74AAAAJ&hl=en",
+      cv: "https://drive.google.com/file/d/1JC65zJ87bAWKE5m8HiYobpw9JzLT85Zt/view?usp=drivesdk"
+    }
+  },
+  <!-- Others - Automation specialist -->
+  "Quentin Currier-Moritsugu":{
+    title: "Automation Specialist",
+    bio:"Quentin joined the group in December 2025 as an Automated Experiment Specialist. His work focuses on developing reliable, high-throughput experimental workflows for materials discovery, including laboratory automation, robotic liquid handling, and the integration of synthesis and characterization processes. His initial work with the group has centered on high-throughput synthesis workflows for catalyst discovery.Quentin holds a Master of Applied Science in Electrical Engineering and a Bachelor of Engineering in Biomedical Engineering from Toronto Metropolitan University. His graduate research focused on the design and proof-of-concept fabrication of a novel passive wireless inductive pressure sensor, establishing an architecture suitable for future MEMS-scale miniaturization. Outside of work, Quentin enjoys canoe tripping, board games, and grappling sports."
+  },
+  <!-- Alumni -->
+  "Ashley Dale": {
+    title: "AutoDIAL Alumnus - Now a Post Doc at MIT",
+    bio: "<p>Ashley Dale joined AutoDIAL as a Schmidt AI in Science Postdoctoral Fellow in October 2024. Her research focuses on Trustworthy AI Tools for Science, explainable uncertainty quantification for foundation models, and developing trustworthy autonomous laboratory platforms. In 2024, Ashley earned a Ph.D. in physics from Indiana University and a Ph.D. from Purdue University in electrical engineering with a topic in AI for computer vision.</p><p>Her personal website is found <a href='https://daleas0120.github.io/' target='_blank'>here</a>.",
+    social:{
+      linkedin:"https://www.linkedin.com/in/ashley-s-dale/",
+      scholar:"https://scholar.google.com/citations?user=odI62RkAAAAJ&hl=en&oi=ao",
+      website:"https://daleas0120.github.io/",
+    }
+  },
+  "Runze Zhang": {
+    title: "AutoDIAL Alumnus",
+    bio: "<p>Runze Zhang joined the group in January 2022 and has been on a mission to teach machines how to do materials analysis. His research focuses on building open-source tools that facilitate materials analysis by reducing human bias and minimizing the need for a PhD-level brain to interpret experimental data. By blending statistical reasoning with machine learning, he hopes to make materials data not only more trustworthy and reproducible, but also less mysterious.</p><p>Before joining the group, Runze earned his BASc degree in Polymer Engineering and Science from the Harbin Institute of Technology. As an undergraduate, he worked on projects involving the synthesis, scale-up, modification, and application of polyhedral oligomeric silsesquioxanes.</p><p>Outside of research, Runze enjoys playing piano and chilling with his cats.</p>",
+    social:{
+      linkedin: "https://www.linkedin.com/in/runze-zhang-874442243/",
+      scholar: "https://scholar.google.com/citations?hl=en&user=C8HyixEAAAAJ",
+      github: "https://github.com/RunzeZhang123"
+    }
   },
   "Katherine Lei": {
     title: "AutoDIAL Alumnus",
@@ -417,22 +454,6 @@ const bioData = {
   "Shayan Mousavi": {
     title: "AutoDIAL Alumnus - Now at Sanofi",
     bio: "Shayan Mousavi is an AutoDIAL alumnus who now works at Sanofi, applying his expertise in pharmaceutical research and development."
-  },
-  "Ang (Leo) Li":{
-    title: "Post Doc",
-    bio: "Ang (Leo) Li joined the group in June 2026 as a Vector Distinguished Postdoctoral Fellow, hosted by Professors Jason Hattrick-Simpers and Anatole von Lilienfeld. He focuses on developing self-driving laboratories. He received his BASc in Computer Engineering in 2021 and his PhD in Mechanical Engineering in 2026 from the University of Toronto."
-  },
-  "Jingyan Zhang":{
-    title: "Post Doc",
-    bio: "Jingyan Zhang joined the group as a Postdoctoral Fellow in June 2026. Her current research focuses on AI-driven materials acceleration and electrochemical metal recovery through self-driving experimental platforms."
-  },
-  "Quentin Currier-Moritsugu":{
-    title: "Automation Specialist",
-    bio:"Quentin joined the group in December 2025 as an Automated Experiment Specialist. His work focuses on developing reliable, high-throughput experimental workflows for materials discovery, including laboratory automation, robotic liquid handling, and the integration of synthesis and characterization processes. His initial work with the group has centered on high-throughput synthesis workflows for catalyst discovery.Quentin holds a Master of Applied Science in Electrical Engineering and a Bachelor of Engineering in Biomedical Engineering from Toronto Metropolitan University. His graduate research focused on the design and proof-of-concept fabrication of a novel passive wireless inductive pressure sensor, establishing an architecture suitable for future MEMS-scale miniaturization. Outside of work, Quentin enjoys canoe tripping, board games, and grappling sports."
-  },
-  "Ghazal":{
-    title:"Ph.D. Student",
-    bio:"Ghazal is a PhD student in Materials Science and Engineering. She earned her bachelor's degree in applied chemistry from Sharif University of Technology and an MSc in chemistry from Western University."
   }
 };
 
@@ -463,9 +484,9 @@ function openModal(imgElement) {
   console.log("Opening modal for:", imgElement.alt);
   const name = imgElement.alt;
   const data = bioData[name];
-  
+
   console.log("Bio data found:", data);
-  
+
   if (data) {
     modalImage.src = imgElement.src;
     modalImage.alt = name;
@@ -496,7 +517,7 @@ document.addEventListener('DOMContentLoaded', function() {
   console.log("DOM loaded, adding click listeners");
   const images = document.querySelectorAll('img[alt]');
   console.log("Found", images.length, "images with alt attributes");
-  
+
   images.forEach((img, index) => {
     if (img.alt && img.alt !== "") {
       console.log(`Adding click listener to image ${index}: ${img.alt}`);
@@ -643,6 +664,13 @@ document.addEventListener('keydown', function(event) {
     <img src="/assets/images/people/Ghazal_Shafiee.jpg" alt="Ghazal Shafiee" style="width:100%;max-width:180px;display:block;margin:auto;">
     <div class="person-text">
       <div class="person-name">Ghazal Shafiee</div>
+    </div>
+  </div>
+
+  <div class="person-card">
+    <img src="/assets/images/people/Shafiq.jpg" alt="Md Shafiqul Islam" style="width:100%;max-width:180px;display:block;margin:auto;">
+    <div class="person-text">
+      <div class="person-name">Md Shafiqul Islam</div>
     </div>
   </div>
 
