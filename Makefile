@@ -3,7 +3,7 @@ BUNDLE ?= bundle
 GEM ?= gem
 RUBY_PACKAGES ?= ruby-full build-essential zlib1g-dev bundler
 
-.PHONY: install install-system install-gems build serve
+.PHONY: install install-system install-gems optimize-media build serve clean
 
 # Show documentation and some recommended commands and instructions for using this Makefile.
 help:
@@ -11,6 +11,7 @@ help:
 	@echo ""
 	@echo "Usage:"
 	@echo "  make install          Install system dependencies and Ruby gems."
+	@echo "  make optimize-media   Generate web-ready images and video."
 	@echo "  make build            Build the Jekyll site."
 	@echo "  make serve            Serve the Jekyll site locally."
 	@echo ""
@@ -36,6 +37,9 @@ install-gems:
 	fi
 	$(BUNDLE) config set path vendor/bundle
 	$(BUNDLE) install
+
+optimize-media:
+	./script/optimize-media
 
 build:
 	$(BUNDLE) exec jekyll build

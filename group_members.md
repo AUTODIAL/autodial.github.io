@@ -31,6 +31,9 @@ img[alt]:hover {
 
 .person-card img[alt] {
   position: relative;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
 }
 
 .person-card::after {
@@ -553,7 +556,7 @@ document.addEventListener('keydown', function(event) {
 ### Principle Investigator
 
   <div class="person-card" style="text-align: center; margin: 2rem auto; max-width: 500px;">
-    <img src="/assets/images/people/Jae.jpg" alt="Jason Hattrick-Simpers" style="width:100%;max-width:180px;display:block;margin:auto;border-radius:12px;">
+    <img src="/assets/images/people/Jae-300.webp" srcset="/assets/images/people/Jae-300.webp 300w, /assets/images/people/Jae-600.webp 600w" sizes="180px" width="300" height="300" alt="Jason Hattrick-Simpers" decoding="async" fetchpriority="high" style="width:100%;max-width:180px;display:block;margin:auto;border-radius:12px;">
     <div class="person-text">
       <div class="person-name">Jason Hattrick-Simpers</div>
     </div>
@@ -564,63 +567,63 @@ document.addEventListener('keydown', function(event) {
 <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; justify-items: center; align-items: start; max-width: 1000px; margin: 40px auto;">
 
   <div class="person-card">
-    <img src="/assets/images/people/Yutong_Liu.jpg" alt="Yutong Liu" style="width:100%;max-width:180px;display:block;margin:auto;">
+    <img src="/assets/images/people/Yutong_Liu-300.webp" srcset="/assets/images/people/Yutong_Liu-300.webp 300w, /assets/images/people/Yutong_Liu-600.webp 600w" sizes="180px" width="300" height="300" alt="Yutong Liu" loading="lazy" decoding="async" style="width:100%;max-width:180px;display:block;margin:auto;">
     <div class="person-text">
       <div class="person-name">Yutong Liu</div>
     </div>
   </div>
 
   <div class="person-card">
-    <img src="/assets/images/people/Changjun_Cheng.jpg" alt="Changjun Cheng" style="width:100%;max-width:180px;display:block;margin:auto;">
+    <img src="/assets/images/people/Changjun_Cheng-300.webp" srcset="/assets/images/people/Changjun_Cheng-300.webp 300w, /assets/images/people/Changjun_Cheng-600.webp 600w" sizes="180px" width="300" height="300" alt="Changjun Cheng" loading="lazy" decoding="async" style="width:100%;max-width:180px;display:block;margin:auto;">
     <div class="person-text">
       <div class="person-name">Changjun Cheng</div>
     </div>
   </div>
 
   <div class="person-card">
-    <img src="/assets/images/people/Hao_Wan.png" alt="Hao Wan" style="width:100%;max-width:180px;display:block;margin:auto;">
+    <img src="/assets/images/people/Hao_Wan-300.webp" srcset="/assets/images/people/Hao_Wan-300.webp 300w, /assets/images/people/Hao_Wan-600.webp 600w" sizes="180px" width="300" height="300" alt="Hao Wan" loading="lazy" decoding="async" style="width:100%;max-width:180px;display:block;margin:auto;">
     <div class="person-text">
       <div class="person-name">Hao Wan</div>
     </div>
   </div>
 
   <div class="person-card">
-    <img src="/assets/images/people/Dan.png" alt="Dan McHaffie" style="width:100%;max-width:180px;display:block;margin:auto;">
+    <img src="/assets/images/people/Dan-300.webp" srcset="/assets/images/people/Dan-300.webp 300w, /assets/images/people/Dan-600.webp 600w" sizes="180px" width="300" height="300" alt="Dan McHaffie" loading="lazy" decoding="async" style="width:100%;max-width:180px;display:block;margin:auto;">
     <div class="person-text">
       <div class="person-name">Dan McHaffie</div>
     </div>
   </div>
 
   <div class="person-card">
-    <img src="/assets/images/people/Luke.jpg" alt="Luke Menezes" style="width:100%;max-width:180px;display:block;margin:auto;">
+    <img src="/assets/images/people/Luke-300.webp" srcset="/assets/images/people/Luke-300.webp 300w, /assets/images/people/Luke-600.webp 600w" sizes="180px" width="300" height="300" alt="Luke Menezes" loading="lazy" decoding="async" style="width:100%;max-width:180px;display:block;margin:auto;">
     <div class="person-text">
       <div class="person-name">Luke Menezes</div>
     </div>
   </div>
 
   <div class="person-card">
-    <img src="/assets/images/people/YIN.png" alt="YIN ZHU" style="width:100%;max-width:180px;display:block;margin:auto;">
+    <img src="/assets/images/people/YIN-300.webp" srcset="/assets/images/people/YIN-300.webp 300w, /assets/images/people/YIN-600.webp 600w" sizes="180px" width="300" height="300" alt="YIN ZHU" loading="lazy" decoding="async" style="width:100%;max-width:180px;display:block;margin:auto;">
     <div class="person-text">
       <div class="person-name">Yin Zhu</div>
     </div>
   </div>
 
   <div class="person-card">
-    <img src="/assets/images/people/Yonatan.jpg" alt="Yonatan Kurniawan" style="width:100%;max-width:180px;display:block;margin:auto;">
+    <img src="/assets/images/people/Yonatan-300.webp" srcset="/assets/images/people/Yonatan-300.webp 300w, /assets/images/people/Yonatan-600.webp 600w" sizes="180px" width="300" height="300" alt="Yonatan Kurniawan" loading="lazy" decoding="async" style="width:100%;max-width:180px;display:block;margin:auto;">
     <div class="person-text">
       <div class="person-name">Yonatan Kurniawan</div>
     </div>
   </div>
 
   <div class="person-card">
-    <img src="/assets/images/people/Jingyan_Zhang.jpg" alt="Jingyan Zhang" style="width:100%;max-width:180px;display:block;margin:auto;">
+    <img src="/assets/images/people/Jingyan_Zhang-300.webp" srcset="/assets/images/people/Jingyan_Zhang-300.webp 300w, /assets/images/people/Jingyan_Zhang-600.webp 600w" sizes="180px" width="300" height="300" alt="Jingyan Zhang" loading="lazy" decoding="async" style="width:100%;max-width:180px;display:block;margin:auto;">
     <div class="person-text">
       <div class="person-name">Jingyan Zhang</div>
     </div>
   </div>
 
   <div class="person-card">
-    <img src="/assets/images/people/Ang_Li.jpg" alt="Ang (Leo) Li" style="width:100%;max-width:180px;display:block;margin:auto;">
+    <img src="/assets/images/people/Ang_Li-300.webp" srcset="/assets/images/people/Ang_Li-300.webp 300w, /assets/images/people/Ang_Li-600.webp 600w" sizes="180px" width="300" height="300" alt="Ang (Leo) Li" loading="lazy" decoding="async" style="width:100%;max-width:180px;display:block;margin:auto;">
     <div class="person-text">
       <div class="person-name">Ang (Leo) Li</div>
     </div>
@@ -633,56 +636,56 @@ document.addEventListener('keydown', function(event) {
 <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; justify-items: center; align-items: start; max-width: 1000px; margin: 40px auto;">
 
   <div class="person-card">
-    <img src="/assets/images/people/Daniel.jpg" alt="Daniel Persaud" style="width:100%;max-width:180px;display:block;margin:auto;">
+    <img src="/assets/images/people/Daniel-300.webp" srcset="/assets/images/people/Daniel-300.webp 300w, /assets/images/people/Daniel-600.webp 600w" sizes="180px" width="300" height="300" alt="Daniel Persaud" loading="lazy" decoding="async" style="width:100%;max-width:180px;display:block;margin:auto;">
     <div class="person-text">
       <div class="person-name">Daniel Persaud</div>
     </div>
   </div>
 
   <div class="person-card">
-    <img src="/assets/images/people/Hongchen_Wang.jpg" alt="Hongchen Wang" style="width:100%;max-width:180px;display:block;margin:auto;">
+    <img src="/assets/images/people/Hongchen_Wang-300.webp" srcset="/assets/images/people/Hongchen_Wang-300.webp 300w, /assets/images/people/Hongchen_Wang-600.webp 600w" sizes="180px" width="300" height="300" alt="Hongchen Wang" loading="lazy" decoding="async" style="width:100%;max-width:180px;display:block;margin:auto;">
     <div class="person-text">
       <div class="person-name">Hongchen Wang</div>
     </div>
   </div>
 
   <div class="person-card">
-    <img src="/assets/images/people/Qiuyu_(Sara)_Shi.jpg" alt="Qiuyu (Sara) Shi" style="width:100%;max-width:180px;display:block;margin:auto;">
+    <img src="/assets/images/people/Qiuyu_(Sara)_Shi-300.webp" srcset="/assets/images/people/Qiuyu_(Sara)_Shi-300.webp 300w, /assets/images/people/Qiuyu_(Sara)_Shi-600.webp 600w" sizes="180px" width="300" height="300" alt="Qiuyu (Sara) Shi" loading="lazy" decoding="async" style="width:100%;max-width:180px;display:block;margin:auto;">
     <div class="person-text">
       <div class="person-name">Qiuyu (Sara) Shi</div>
     </div>
   </div>
 
   <div class="person-card">
-    <img src="/assets/images/people/RafaelEspinosaCastanedaPhoto.jpg" alt="Rafael Espinosa Castañeda" style="width:100%;max-width:180px;display:block;margin:auto;">
+    <img src="/assets/images/people/RafaelEspinosaCastanedaPhoto-300.webp" srcset="/assets/images/people/RafaelEspinosaCastanedaPhoto-300.webp 300w, /assets/images/people/RafaelEspinosaCastanedaPhoto-600.webp 600w" sizes="180px" width="300" height="300" alt="Rafael Espinosa Castañeda" loading="lazy" decoding="async" style="width:100%;max-width:180px;display:block;margin:auto;">
     <div class="person-text">
       <div class="person-name">Rafael Espinosa Castañeda</div>
     </div>
   </div>
 
   <div class="person-card">
-    <img src="/assets/images/people/Ghazal_Shafiee.jpg" alt="Ghazal Shafiee" style="width:100%;max-width:180px;display:block;margin:auto;">
+    <img src="/assets/images/people/Ghazal_Shafiee-300.webp" srcset="/assets/images/people/Ghazal_Shafiee-300.webp 300w, /assets/images/people/Ghazal_Shafiee-600.webp 600w" sizes="180px" width="300" height="300" alt="Ghazal Shafiee" loading="lazy" decoding="async" style="width:100%;max-width:180px;display:block;margin:auto;">
     <div class="person-text">
       <div class="person-name">Ghazal Shafiee</div>
     </div>
   </div>
 
   <div class="person-card">
-    <img src="/assets/images/people/Shafiq.jpg" alt="Md Shafiqul Islam" style="width:100%;max-width:180px;display:block;margin:auto;">
+    <img src="/assets/images/people/Shafiq-300.webp" srcset="/assets/images/people/Shafiq-300.webp 300w, /assets/images/people/Shafiq-600.webp 600w" sizes="180px" width="300" height="300" alt="Md Shafiqul Islam" loading="lazy" decoding="async" style="width:100%;max-width:180px;display:block;margin:auto;">
     <div class="person-text">
       <div class="person-name">Md Shafiqul Islam</div>
     </div>
   </div>
 
   <div class="person-card">
-    <img src="/assets/images/people/Kevin.jpg" alt="Kevin Zhang" style="width:100%;max-width:180px;display:block;margin:auto;">
+    <img src="/assets/images/people/Kevin-300.webp" srcset="/assets/images/people/Kevin-300.webp 300w, /assets/images/people/Kevin-600.webp 600w" sizes="180px" width="300" height="300" alt="Kevin Zhang" loading="lazy" decoding="async" style="width:100%;max-width:180px;display:block;margin:auto;">
     <div class="person-text">
       <div class="person-name">Kevin Zhang</div>
     </div>
   </div>
 
   <div class="person-card">
-    <img src="/assets/images/people/Taha.jpg" alt="Mohammad Taha" style="width:100%;max-width:180px;display:block;margin:auto;">
+    <img src="/assets/images/people/Taha-300.webp" srcset="/assets/images/people/Taha-300.webp 300w, /assets/images/people/Taha-600.webp 600w" sizes="180px" width="300" height="300" alt="Mohammad Taha" loading="lazy" decoding="async" style="width:100%;max-width:180px;display:block;margin:auto;">
     <div class="person-text">
       <div class="person-name">Mohammad Taha</div>
     </div>
@@ -695,7 +698,7 @@ document.addEventListener('keydown', function(event) {
 <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; justify-items: center; align-items: start; max-width: 1000px; margin: 40px auto;">
 
   <div class="person-card">
-    <img src="/assets/images/people/Quentin.png" alt="Quentin Currier-Moritsugu" style="width:100%;max-width:180px;display:block;margin:auto;">
+    <img src="/assets/images/people/Quentin-300.webp" srcset="/assets/images/people/Quentin-300.webp 300w, /assets/images/people/Quentin-600.webp 600w" sizes="180px" width="300" height="300" alt="Quentin Currier-Moritsugu" loading="lazy" decoding="async" style="width:100%;max-width:180px;display:block;margin:auto;">
     <div class="person-text">
       <div class="person-name">Quentin Currier-Moritsugu</div>
     </div>
@@ -708,14 +711,14 @@ document.addEventListener('keydown', function(event) {
 <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; justify-items: center; align-items: start; max-width: 1000px; margin: 40px auto;">
 
   <div class="person-card">
-    <img src="/assets/images/people/Katherine_Lei.jpg" alt="Katherine Lei" style="width:100%;max-width:180px;display:block;margin:auto;">
+    <img src="/assets/images/people/Katherine_Lei-300.webp" srcset="/assets/images/people/Katherine_Lei-300.webp 300w, /assets/images/people/Katherine_Lei-600.webp 600w" sizes="180px" width="300" height="300" alt="Katherine Lei" loading="lazy" decoding="async" style="width:100%;max-width:180px;display:block;margin:auto;">
     <div class="person-text">
       <div class="person-name">Katherine Lei</div>
     </div>
   </div>
 
   <div class="person-card">
-    <img src="/assets/images/people/Ali_Jaberi.jpg" alt="Ali Jaberi" style="width:100%;max-width:180px;display:block;margin:auto;">
+    <img src="/assets/images/people/Ali_Jaberi-300.webp" srcset="/assets/images/people/Ali_Jaberi-300.webp 300w, /assets/images/people/Ali_Jaberi-600.webp 600w" sizes="180px" width="300" height="300" alt="Ali Jaberi" loading="lazy" decoding="async" style="width:100%;max-width:180px;display:block;margin:auto;">
     <div class="person-text">
       <div class="person-name">Ali Jaberi</div>
       <div class="person-title">National Resource Council Canada</div>
@@ -723,7 +726,7 @@ document.addEventListener('keydown', function(event) {
   </div>
 
   <div class="person-card">
-    <img src="/assets/images/people/Hooman_Chamani.jpg" alt="Hooman Chamani" style="width:100%;max-width:180px;display:block;margin:auto;">
+    <img src="/assets/images/people/Hooman_Chamani-300.webp" srcset="/assets/images/people/Hooman_Chamani-300.webp 300w, /assets/images/people/Hooman_Chamani-600.webp 600w" sizes="180px" width="300" height="300" alt="Hooman Chamani" loading="lazy" decoding="async" style="width:100%;max-width:180px;display:block;margin:auto;">
     <div class="person-text">
       <div class="person-name">Hooman Chamani</div>
       <div class="person-title">WSP in Canada</div>
@@ -731,7 +734,7 @@ document.addEventListener('keydown', function(event) {
   </div>
 
   <div class="person-card">
-    <img src="/assets/images/people/Kangming_Li.JPG" alt="Kangming Li" style="width:100%;max-width:180px;display:block;margin:auto;">
+    <img src="/assets/images/people/Kangming_Li-300.webp" srcset="/assets/images/people/Kangming_Li-300.webp 300w, /assets/images/people/Kangming_Li-600.webp 600w" sizes="180px" width="300" height="300" alt="Kangming Li" loading="lazy" decoding="async" style="width:100%;max-width:180px;display:block;margin:auto;">
     <div class="person-text">
       <div class="person-name">Kangming Li</div>
       <div class="person-title">King Abullah University of Science and Technology</div>
@@ -739,7 +742,7 @@ document.addEventListener('keydown', function(event) {
   </div>
 
   <div class="person-card">
-    <img src="/assets/images/people/Amin.jpg" alt="Amin Sadeghi" style="width:100%;max-width:180px;display:block;margin:auto;">
+    <img src="/assets/images/people/Amin-300.webp" srcset="/assets/images/people/Amin-300.webp 300w, /assets/images/people/Amin-600.webp 600w" sizes="180px" width="300" height="300" alt="Amin Sadeghi" loading="lazy" decoding="async" style="width:100%;max-width:180px;display:block;margin:auto;">
     <div class="person-text">
       <div class="person-name">Amin Sadeghi</div>
       <div class="person-title">Carbon Engineering</div>
@@ -747,14 +750,14 @@ document.addEventListener('keydown', function(event) {
   </div>
 
   <div class="person-card">
-    <img src="/assets/images/people/Zhaoyang_Zhao.jpg" alt="Zhaoyang Zhao" style="width:100%;max-width:180px;display:block;margin:auto;">
+    <img src="/assets/images/people/Zhaoyang_Zhao-300.webp" srcset="/assets/images/people/Zhaoyang_Zhao-300.webp 300w, /assets/images/people/Zhaoyang_Zhao-600.webp 600w" sizes="180px" width="300" height="300" alt="Zhaoyang Zhao" loading="lazy" decoding="async" style="width:100%;max-width:180px;display:block;margin:auto;">
     <div class="person-text">
       <div class="person-name">Zhaoyang Zhao</div>
     </div>
   </div>
 
   <div class="person-card">
-    <img src="/assets/images/people/Ben.jpg" alt="Benhour Amirian" style="width:100%;max-width:180px;display:block;margin:auto;">
+    <img src="/assets/images/people/Ben-300.webp" srcset="/assets/images/people/Ben-300.webp 300w, /assets/images/people/Ben-600.webp 600w" sizes="180px" width="300" height="300" alt="Benhour Amirian" loading="lazy" decoding="async" style="width:100%;max-width:180px;display:block;margin:auto;">
     <div class="person-text">
       <div class="person-name">Benhour Amirian</div>
       <div class="person-title">Apple</div>
@@ -762,7 +765,7 @@ document.addEventListener('keydown', function(event) {
   </div>
 
   <div class="person-card">
-    <img src="/assets/images/people/Suhas.jpg" alt="Suhas Mahesh" style="width:100%;max-width:180px;display:block;margin:auto;">
+    <img src="/assets/images/people/Suhas-300.webp" srcset="/assets/images/people/Suhas-300.webp 300w, /assets/images/people/Suhas-600.webp 600w" sizes="180px" width="300" height="300" alt="Suhas Mahesh" loading="lazy" decoding="async" style="width:100%;max-width:180px;display:block;margin:auto;">
     <div class="person-text">
       <div class="person-name">Suhas Mahesh</div>
       <div class="person-title">Schmidt Sciences</div>
@@ -770,7 +773,7 @@ document.addEventListener('keydown', function(event) {
   </div>
 
   <div class="person-card">
-      <img src="/assets/images/people/shayan.jpg" alt="Shayan Mousavi" style="width:100%;max-width:180px;display:block;margin:auto;">
+      <img src="/assets/images/people/shayan-300.webp" srcset="/assets/images/people/shayan-300.webp 300w, /assets/images/people/shayan-600.webp 600w" sizes="180px" width="300" height="300" alt="Shayan Mousavi" loading="lazy" decoding="async" style="width:100%;max-width:180px;display:block;margin:auto;">
       <div class="person-text">
         <div class="person-name">Shayan Mousavi</div>
         <div class="person-title">Sanofi</div>
@@ -778,7 +781,7 @@ document.addEventListener('keydown', function(event) {
   </div>
 
   <div class="person-card">
-    <img src="/assets/images/people/Ashley_Dale.jpg" alt="Ashley Dale" style="width:100%;max-width:180px;display:block;margin:auto;">
+    <img src="/assets/images/people/Ashley_Dale-300.webp" srcset="/assets/images/people/Ashley_Dale-300.webp 300w, /assets/images/people/Ashley_Dale-600.webp 600w" sizes="180px" width="300" height="300" alt="Ashley Dale" loading="lazy" decoding="async" style="width:100%;max-width:180px;display:block;margin:auto;">
     <div class="person-text">
       <div class="person-name">Ashley Dale</div>
       <div class="person-title">MIT</div>
@@ -786,7 +789,7 @@ document.addEventListener('keydown', function(event) {
   </div>
 
   <div class="person-card">
-    <img src="/assets/images/people/Runze_Zhang.jpg" alt="Runze Zhang" style="width:100%;max-width:180px;display:block;margin:auto;">
+    <img src="/assets/images/people/Runze_Zhang-300.webp" srcset="/assets/images/people/Runze_Zhang-300.webp 300w, /assets/images/people/Runze_Zhang-600.webp 600w" sizes="180px" width="300" height="300" alt="Runze Zhang" loading="lazy" decoding="async" style="width:100%;max-width:180px;display:block;margin:auto;">
     <div class="person-text">
       <div class="person-name">Runze Zhang</div>
     </div>
