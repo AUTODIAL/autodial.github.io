@@ -15,8 +15,9 @@ done
 
 bundle exec jekyll clean
 bundle exec jekyll build
-bundle exec htmlproofer ./_site \
-  --assume-extension \
+bundle exec htmlproofer \
+  --assume-extension .html \
   --disable-external \
-  --check-sri
+  --check-sri \
+  ./_site
 bundle exec ruby script/validate-site
