@@ -15,7 +15,7 @@ bundle exec jekyll build
 
 if bundle exec htmlproofer --version >/dev/null 2>&1; then
   echo "Checking output with html-proofer..."
-  bundle exec htmlproofer ./_site --disable-external
+  bundle exec htmlproofer --assume-extension .html --disable-external ./_site
 else
   echo "html-proofer not installed; skipping HTML/link checks."
   echo "Add 'gem \"html-proofer\"' to the Gemfile and run script/setup to enable them."
