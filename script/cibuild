@@ -2,8 +2,7 @@
 
 set -e
 
-bundle exec jekyll build
-bundle exec htmlproofer ./_site --check-sri
+script/check-site
 bundle exec rubocop -D --config .rubocop.yml
 bundle exec script/validate-html
 gem build jekyll-theme-slate.gemspec

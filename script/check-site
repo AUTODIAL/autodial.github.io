@@ -1,0 +1,22 @@
+#!/bin/sh
+
+# Build from scratch and validate the generated website.
+
+set -eu
+
+cd "$(dirname "$0")/.."
+
+for command_name in bundle identify ffprobe; do
+  if ! command -v "$command_name" >/dev/null 2>&1; then
+    echo "$command_name is required to check the site." >&2
+    exit 1
+  fi
+done
+
+bundle exec jekyll clean
+bundle exec jekyll build
+bundle exec htmlproofer ./_site \
+  --assume-extension \
+  --disable-external \
+  --check-sri
+bundle exec ruby script/validate-site

@@ -12,6 +12,8 @@ jobs:
         with:
           ruby-version: 3.2
           bundler-cache: true
+      - name: Install media tools
+        run: sudo apt-get update && sudo apt-get install -y imagemagick ffmpeg
       - name: build
         run: script/bootstrap
       - name: test
