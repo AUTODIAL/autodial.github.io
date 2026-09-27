@@ -14,10 +14,10 @@ for command_name in bundle identify ffprobe; do
 done
 
 bundle exec jekyll clean
+bundle exec ruby script/validate-members
 bundle exec jekyll build
-bundle exec htmlproofer \
-  --assume-extension .html \
+bundle exec htmlproofer ./_site \
+  --assume-extension \
   --disable-external \
-  --check-sri \
-  ./_site
+  --check-sri
 bundle exec ruby script/validate-site

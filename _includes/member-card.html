@@ -1,0 +1,29 @@
+<article class="person-card{% if include.featured %} person-card--featured{% endif %}">
+  <button
+    type="button"
+    class="person-trigger"
+    data-member-id="{{ include.member.id }}"
+    aria-haspopup="dialog"
+    aria-controls="member-dialog-{{ include.member.id }}"
+    aria-label="Open biography for {{ include.member.name }}"
+  >
+    <img
+      class="person-photo"
+      src="/assets/images/people/{{ include.member.photo }}-300.webp"
+      srcset="/assets/images/people/{{ include.member.photo }}-300.webp 300w, /assets/images/people/{{ include.member.photo }}-600.webp 600w"
+      sizes="180px"
+      width="300"
+      height="300"
+      alt="{{ include.member.name }}"
+      {% unless include.featured and include.eager %}loading="lazy"{% endunless %}
+      decoding="async"
+      {% if include.featured and include.eager %}fetchpriority="high"{% endif %}
+    >
+    <span class="person-text">
+      <span class="person-name">{{ include.member.name }}</span>
+      {% if include.member.card_title %}
+        <span class="person-title">{{ include.member.card_title }}</span>
+      {% endif %}
+    </span>
+  </button>
+</article>

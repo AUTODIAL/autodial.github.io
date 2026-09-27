@@ -7,7 +7,9 @@
 
 require "cgi"
 require "fileutils"
+require "nokogiri"
 require "open3"
+require "yaml"
 
 REPOSITORY_ROOT = File.expand_path("..", __dir__)
 SITE_ROOT = File.join(REPOSITORY_ROOT, "_site")
@@ -100,6 +102,44 @@ end
 
 if File.exist?(File.join(SITE_ROOT, "_media_sources"))
   errors << "_media_sources must not be included in the generated site."
+end
+
+members_data = YAML.safe_load_file(
+  File.join(REPOSITORY_ROOT, "_data", "members.yml"), aliases: false
+)
+expected_sections = members_data.fetch("sections")
+expected_members = expected_sections.flat_map { |section| section.fetch("members") }
+group_page_path = File.join(SITE_ROOT, "group_members.html")
+
+if File.file?(group_page_path)
+  group_page = Nokogiri::HTML(File.read(group_page_path))
+  rendered_names = group_page.css(".person-card .person-name").map { |node| node.text.strip }
+  expected_names = expected_members.map { |member| member.fetch("name") }
+  errors << "Rendered member names or ordering do not match members.yml." unless rendered_names == expected_names
+
+  rendered_sections = group_page.css(".member-section > h3").map { |node| node.text.strip }
+  expected_titles = expected_sections.map { |section| section.fetch("title") }
+  errors << "Rendered member sections or ordering do not match members.yml." unless rendered_sections == expected_titles
+
+  id_counts = group_page.xpath("//*[@id]").map { |node| node["id"] }.tally
+  id_counts.select { |_id, count| count > 1 }.each_key do |duplicate_id|
+    errors << "Duplicate HTML id on group-members page: #{duplicate_id}"
+  end
+
+  expected_members.each do |member|
+    member_id = member.fetch("id")
+    trigger = group_page.at_css(%([data-member-id="#{member_id}"]))
+    dialog_id = "member-dialog-#{member_id}"
+    dialog = group_page.at_css("##{dialog_id}")
+
+    errors << "Missing member trigger for #{member_id}." unless trigger
+    errors << "Missing member dialog for #{member_id}." unless dialog
+    if trigger && trigger["aria-controls"] != dialog_id
+      errors << "Member trigger points to the wrong dialog for #{member_id}."
+    end
+  end
+else
+  errors << "Missing generated group_members.html."
 end
 
 if errors.any?

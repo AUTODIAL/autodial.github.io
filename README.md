@@ -32,9 +32,10 @@ make serve
 Jekyll will print the local address, normally
 <http://127.0.0.1:4000>. Stop the server with `Ctrl-C`.
 
-Most page content is stored in the Markdown files in the repository root. For
-example, group-member information is in `group_members.md`, laboratory content
-is in `sdls.md`, and homepage content is in `index.md`.
+Most page content is stored in the Markdown files in the repository root.
+Laboratory content is in `sdls.md`, and homepage content is in `index.md`.
+Group-member records are maintained in `_data/members.yml`; reusable templates
+under `_includes/` generate their cards and biography dialogs.
 
 ## Updating media
 
@@ -71,9 +72,24 @@ assets/images/people/Jane_Doe-300.webp
 assets/images/people/Jane_Doe-600.webp
 ```
 
-When adding a group member, add the original portrait, run
-`make optimize-media`, and reference those two generated files from
-`group_members.md`.
+### Adding or updating a group member
+
+Each person is represented once in `_data/members.yml`. Section and member
+order in that file controls the rendered order. A member record contains a
+stable lowercase `id`, their displayed `name`, modal `role`, portrait filename
+stem in `photo`, HTML biography in `bio`, and optional profile `links` and
+`card_title`.
+
+To add a member:
+
+1. Add the original portrait to `_media_sources/images/people/`.
+2. Add the member record to the appropriate section in `_data/members.yml`.
+3. Run `make optimize-media` to generate the 300px and 600px portraits.
+4. Run `make check` and inspect the page with `make serve`.
+
+To move someone to alumni, move their complete record to the `alumni` section
+and update `role` or `card_title` as needed. The portrait and biography do not
+need to be duplicated.
 
 ## Validation
 
@@ -87,7 +103,9 @@ This command performs a clean Jekyll build, checks internal HTML links, and
 validates the media referenced by the generated pages. It detects missing or
 empty files, corrupted images, incorrectly sized portraits, non-H.264 videos,
 differences between `assets/` and `_site/`, and accidental publication of
-`_media_sources/`.
+`_media_sources/`. It also validates member records, unique identifiers,
+profile URLs, source portraits, rendered ordering, and the one-to-one mapping
+between member cards and biography dialogs.
 
 GitHub Actions runs the same checks for pushes and pull requests, followed by
 the theme's Ruby, HTML, and package checks.

@@ -6,12 +6,14 @@ set -eu
 
 cd "$(dirname "$0")/.."
 
-for command_name in convert ffmpeg ffprobe identify; do
+for command_name in convert ffmpeg ffprobe identify ruby; do
   if ! command -v "$command_name" >/dev/null 2>&1; then
     echo "$command_name is required to optimize site media." >&2
     exit 1
   fi
 done
+
+ruby script/validate-members --source-only
 
 staging_dir=$(mktemp -d _media_sources/.optimized-media-XXXXXX)
 cleanup_staging() {
@@ -197,24 +199,26 @@ printf '%s\t%s\n' \
   assets/images/lab/corrosion_map_1.mp4 >> "$publish_manifest"
 printf '%s\n' assets/images/lab/corrosion_map_1.mp4 >> "$destination_manifest"
 
-# Refuse to publish a set that cannot satisfy every portrait URL used by the
-# group-members page. This catches naming mistakes before existing assets are
+# Refuse to publish a set that cannot satisfy the portrait stems declared in
+# the member data. This catches naming mistakes before existing assets are
 # replaced.
-portrait_references="$staging_dir/portrait-references"
-grep -oE '/assets/images/people/[^" ]+\.webp' group_members.md \
-  | sort -u > "$portrait_references"
-if [ ! -s "$portrait_references" ]; then
-  echo "No portrait references found in group_members.md." >&2
-  exit 1
-fi
+member_photos="$staging_dir/member-photos"
+ruby -ryaml -e '
+  data = YAML.safe_load_file("_data/members.yml", aliases: false)
+  data.fetch("sections").each do |section|
+    section.fetch("members").each { |member| puts member.fetch("photo") }
+  end
+' | sort -u > "$member_photos"
 
-while IFS= read -r reference_path; do
-  destination_path=${reference_path#/}
-  if ! grep -Fqx "$destination_path" "$destination_manifest"; then
-    echo "No generated portrait matches $reference_path." >&2
-    exit 1
-  fi
-done < "$portrait_references"
+while IFS= read -r photo_stem; do
+  for size in 300 600; do
+    destination_path="assets/images/people/${photo_stem}-${size}.webp"
+    if ! grep -Fqx "$destination_path" "$destination_manifest"; then
+      echo "No generated portrait matches $destination_path." >&2
+      exit 1
+    fi
+  done
+done < "$member_photos"
 
 # Publishing is deliberately last. Each completed file replaces its previous
 # version with a same-filesystem rename, so Jekyll can never copy a partially
@@ -232,4 +236,5 @@ while IFS="$tab" read -r staged_path destination_path; do
   fi
 done < "$publish_manifest"
 
+ruby script/validate-members
 echo "Optimized media ready: $updated_count updated, $unchanged_count unchanged."
