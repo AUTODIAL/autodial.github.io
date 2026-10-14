@@ -3,17 +3,32 @@
 This repository contains the Jekyll website for the Autonomous Discovery of
 Alloys (AutoDIAL) research group.
 
+## Project documentation
+
+- [Developer guide](docs/DEVELOPER_GUIDE.md): repository structure and
+  task-oriented update procedures.
+- [Verification plan](docs/TESTING.md): automated checks, browser review, and
+  regression-test design.
+- [Improvement roadmap](docs/ROADMAP.md): prioritized implementation work and
+  acceptance criteria.
+- [Agent feature map](docs/feature-map.yml): structured feature ownership,
+  dependencies, update recipes, and validation contracts.
+
 ## Requirements
 
 - Ruby and Bundler
 - ImageMagick (`convert` and `identify`)
 - FFmpeg (`ffmpeg` and `ffprobe`)
+- Firefox and Geckodriver for `make test` and `make test-ui`
 
-On Debian or Ubuntu, install the system dependencies and Ruby gems with:
+On Debian or Ubuntu, install the Ruby and media dependencies with:
 
 ```sh
 make install
 ```
+
+Install Firefox and Geckodriver separately when you need the real-browser
+suite. They are preinstalled on the pinned GitHub Actions runner.
 
 ## Local development
 
@@ -105,7 +120,19 @@ empty files, corrupted images, incorrectly sized portraits, non-H.264 videos,
 differences between `assets/` and `_site/`, and accidental publication of
 `_media_sources/`. It also validates member records, unique identifiers,
 profile URLs, source portraits, rendered ordering, and the one-to-one mapping
-between member cards and biography dialogs.
+between member cards and biography dialogs. It also runs generated-HTML
+contract tests for page metadata, landmarks, navigation, accessible control
+names, images, duplicate IDs, dialog relationships, and video markup.
+
+For structural, layout, CSS, or JavaScript changes, run the real-browser suite:
+
+```sh
+make test
+```
+
+This includes `make check` and then uses headless Firefox to exercise primary
+routes, skip navigation, member dialogs with mouse and keyboard, focus trapping,
+phone-width layout, news navigation, and CorrosionMAP playback and seeking.
 
 GitHub Actions runs the same checks for pushes and pull requests, followed by
 the theme's Ruby, HTML, and package checks.
@@ -116,7 +143,8 @@ the theme's Ruby, HTML, and package checks.
 2. Put new original media in `_media_sources/`, if needed.
 3. Run `make optimize-media` after changing media.
 4. Run `make check`.
-5. Run `make serve` and inspect the affected pages in a browser.
-6. Commit the content, original media, and generated media together.
+5. Run `make test` for layout, template, or interaction changes.
+6. Run `make serve` and inspect the affected pages in a browser.
+7. Commit the content, original media, and generated media together.
 
 Run `make help` to see the available Makefile commands.

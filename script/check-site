@@ -21,3 +21,4 @@ bundle exec htmlproofer ./_site \
   --disable-external \
   --check-sri
 bundle exec ruby script/validate-site
+bundle exec ruby -Itest test/rendered_site_test.rb

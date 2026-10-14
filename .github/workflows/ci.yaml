@@ -1,13 +1,23 @@
+name: CI
+
 on:
   push:
   pull_request:
-    types: [opened, synchronize]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
     name: script/cibuild
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v7
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: 3.2
@@ -18,3 +28,13 @@ jobs:
         run: script/bootstrap
       - name: test
         run: script/cibuild
+        env:
+          TMPDIR: ${{ runner.temp }}
+      - name: Upload browser-test diagnostics
+        if: failure()
+        uses: actions/upload-artifact@v7
+        with:
+          name: browser-test-diagnostics
+          path: ${{ runner.temp }}/autodial-ui-test-*
+          if-no-files-found: ignore
+          retention-days: 7

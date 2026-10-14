@@ -25,6 +25,7 @@
   </head>
 
   <body>
+    <a class="skip-link" href="#main_content">Skip to main content</a>
 
     <!-- HEADER -->
     <div id="header_wrap" class="outer" style="padding:0px;">
@@ -69,13 +70,13 @@
       <li><a href="{{ '/openings' | relative_url }}">Openings</a></li>
       <li><a href="{{ '/contact' | relative_url }}">Contact</a></li>
       <li style="text-align: center;">-</li>
-      <li><a href="https://autodiallab.ca/AutoEIS/" target="_blank">AutoEIS Website</a></li>
+      <li><a href="https://autodiallab.ca/AutoEIS/" target="_blank" rel="noopener noreferrer">AutoEIS Website</a></li>
       <!-- Add more links as needed -->
     </ul>
   </nav>
-  <section id="main_content" style="flex:1; padding: 40px 50px 40px 20px;">
+  <main id="main_content" tabindex="-1" style="flex:1; padding: 40px 50px 40px 20px;">
     {{ content }}
-  </section>
+  </main>
 </div>
 
     <!-- FOOTER  -->

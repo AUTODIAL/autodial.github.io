@@ -1,6 +1,7 @@
 ---
 layout: default
 title: News & Updates
+description: News, research updates, publications, and group activities from AutoDIAL.
 ---
 
 <style>

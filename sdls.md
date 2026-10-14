@@ -1,5 +1,7 @@
 ---
 layout: default
+title: Self Driving Labs
+description: Explore AutoDIAL self-driving laboratory platforms for corrosion mapping, electrochemistry, and battery research.
 ---
 
 # CorrosionMAP

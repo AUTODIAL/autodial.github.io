@@ -1,5 +1,7 @@
 ---
 layout: default
+title: Home
+description: AutoDIAL develops autonomous materials-discovery platforms, high-throughput experiments, and trustworthy AI at the University of Toronto.
 ---
 
 <img src="/assets/images/Group_Picture_Fall_2026-640.webp" srcset="/assets/images/Group_Picture_Fall_2026-640.webp 640w, /assets/images/Group_Picture_Fall_2026-1200.webp 1200w" sizes="(max-width: 600px) 100vw, 500px" width="640" height="480" alt="Group Picture Fall 2026" decoding="async" fetchpriority="high" style="width:100%;max-width:500px;height:auto;display:block;margin:auto;">

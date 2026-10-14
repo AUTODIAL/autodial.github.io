@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Group Members and Alumni
+description: Meet the researchers, students, automation specialists, and alumni of the AutoDIAL research group.
 ---
 
 <link rel="stylesheet" href="{{ '/assets/css/group-members.css' | relative_url }}">

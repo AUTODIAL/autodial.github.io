@@ -4,7 +4,7 @@ GEM ?= gem
 RUBY_PACKAGES ?= ruby-full build-essential zlib1g-dev bundler
 MEDIA_PACKAGES ?= imagemagick ffmpeg
 
-.PHONY: install install-system install-gems optimize-media build check serve clean
+.PHONY: install install-system install-gems optimize-media build check test test-ui serve clean
 
 # Show documentation and some recommended commands and instructions for using this Makefile.
 help:
@@ -15,6 +15,8 @@ help:
 	@echo "  make optimize-media   Generate web-ready images and video."
 	@echo "  make build            Build the Jekyll site."
 	@echo "  make check            Build and validate the site and its media."
+	@echo "  make test             Run the full local check and browser interaction tests."
+	@echo "  make test-ui          Build and run browser interaction tests."
 	@echo "  make serve            Serve the Jekyll site locally."
 	@echo ""
 	@echo "Environment Variables:"
@@ -49,6 +51,12 @@ build:
 
 check:
 	./script/check-site
+
+test: check
+	./script/test-ui
+
+test-ui: build
+	./script/test-ui
 
 serve:
 	$(BUNDLE) exec jekyll serve
