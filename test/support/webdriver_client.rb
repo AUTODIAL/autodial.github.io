@@ -5,6 +5,8 @@ require "net/http"
 require "uri"
 
 class WebDriverClient
+  COMMAND_READ_TIMEOUT = 30
+  SESSION_START_READ_TIMEOUT = 90
   ELEMENT_KEY = "element-6066-11e4-a52e-4f735466cecf"
   KEY = {
     escape: "\uE00C",
@@ -35,7 +37,7 @@ class WebDriverClient
           }
         }
       }
-    })
+    }, read_timeout: SESSION_START_READ_TIMEOUT)
     @session_id = session.fetch("sessionId")
     self
   end
@@ -149,7 +151,7 @@ class WebDriverClient
     nil
   end
 
-  def request(method, path, body = nil)
+  def request(method, path, body = nil, read_timeout: COMMAND_READ_TIMEOUT)
     uri = URI.join(@endpoint.to_s, path)
     request_class = {
       delete: Net::HTTP::Delete,
@@ -163,7 +165,7 @@ class WebDriverClient
       http_request.body = JSON.generate(body || {})
     end
 
-    response = Net::HTTP.start(uri.host, uri.port, open_timeout: 5, read_timeout: 30) do |http|
+    response = Net::HTTP.start(uri.host, uri.port, open_timeout: 5, read_timeout: read_timeout) do |http|
       http.request(http_request)
     end
     parsed = response.body.empty? ? {} : JSON.parse(response.body)
