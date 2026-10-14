@@ -103,6 +103,16 @@ sections:
         bio: >-
           <p>Ang (Leo) Li joined the group in June 2026 as a Vector Distinguished Postdoctoral Fellow, hosted by Professors Jason Hattrick-Simpers and Anatole von Lilienfeld. He focuses on developing self-driving laboratories. He received his BASc in Computer Engineering in 2021 and his PhD in Mechanical Engineering in 2026 from the University of Toronto.</p>
 
+      - id: sai-govind-hari-kumar
+        name: Sai Govind Hari Kumar
+        role: Post Doc
+        photo: Govind_Hari_Kumar
+        bio: >-
+          <p>Govind Hari Kumar is a postdoctoral researcher working on materials science and artificial intelligence for autonomous science.</p>
+        links:
+          - platform: scholar
+            url: https://scholar.google.com/citations?user=Xzw9HqoAAAAJ&hl=en
+
   - id: graduate-students
     title: Graduate Students
     members:
