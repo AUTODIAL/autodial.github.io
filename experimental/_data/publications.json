@@ -127,6 +127,34 @@
     "image": null
   },
   {
+    "id": "publication-b2cde3e2e9f6",
+    "title": "High-throughput validation of phase formability and simulation accuracy of cantor alloys",
+    "authors": [
+      "Changjun Cheng",
+      "Daniel Persaud",
+      "Kangming Li",
+      "Michael J. Moorehead",
+      "Natalie Page",
+      "Christian Lavoie",
+      "Beatriz Diaz Moreno",
+      "Adrien Couet",
+      "Samuel E Lofland",
+      "Jason Hattrick-Simpers"
+    ],
+    "venue": "Applied Materials Today",
+    "year": 2026,
+    "type": "journal",
+    "doi": "10.1016/j.apmt.2026.103178",
+    "doi_url": "https://doi.org/10.1016/j.apmt.2026.103178",
+    "links": [
+      {
+        "label": "Publication",
+        "url": "https://www.sciencedirect.com/science/article/pii/S2352940726000934"
+      }
+    ],
+    "image": null
+  },
+  {
     "id": "publication-abe94abf1a00",
     "title": "Materials Acceleration Platform for Electrochemistry: a Platform for Autonomous Electrochemistry",
     "authors": [

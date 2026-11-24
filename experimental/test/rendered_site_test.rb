@@ -103,7 +103,7 @@ class RenderedSiteTest < Minitest::Test
   def test_publication_news_links_to_approved_papers
     document = Nokogiri::HTML(File.read(File.join(SITE_ROOT, "news.html")))
     cards = document.css(".news-card--publication")
-    assert_equal 17, cards.length
+    assert_equal 18, cards.length
     cards.each do |card|
       doi = card["data-doi"]
       refute_nil doi
@@ -113,6 +113,12 @@ class RenderedSiteTest < Minitest::Test
     ampere = document.at_css('.news-card[data-doi="10.1039/d4dd00203b"]')
     assert_equal "Daniel", ampere.at_css(".news-card__congratulations a").text.strip
     assert_includes ampere.at_css(".news-card__description").text, "Jehad Abed and Yang Bai"
+
+    cantor = document.at_css('.news-card[data-doi="10.1016/j.apmt.2026.103178"]')
+    refute_nil cantor
+    assert_equal "April 2026", cantor.at_css("time").text.strip
+    assert_equal %w[Changjun Daniel], cantor.css(".news-card__congratulations a").map { |link| link.text.strip }
+    assert_equal "/publications#publication-b2cde3e2e9f6", cantor.at_css('a[href^="/publications#publication-"]')["href"]
   end
 
   def test_software_catalog_preserves_autoeis_documentation

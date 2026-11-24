@@ -47,11 +47,12 @@ published as website pages. They may contain public bibliographic metadata for
 papers that do **not** belong on the AutoDIAL site; only approved records are
 rendered. The 2026-11-21 local refresh has 189 deduplicated candidates in 184
 work groups from Prof. Jason Hattrick-Simpers's verified OpenAlex profile and
-configured arXiv IDs. Seventeen journal versions and five arXiv preprint
-versions have passed a local source review for the redesign preview; 167 candidates remain
-pending. The journal DOIs were checked against their source records, while
-arXiv-only preprints do not require Crossref. AutoREC's approved journal and
-preprint versions display as one work, so the website has 21 entries.
+configured arXiv IDs. As of 2026-11-24, eighteen journal versions and five
+arXiv preprint versions have passed a local source review for the redesign
+preview; 166 candidates remain pending. The journal DOIs were checked against
+their source records, while arXiv-only preprints do not require Crossref.
+AutoREC's approved journal and preprint versions display as one work, so the
+website has 22 entries.
 These editorial decisions are **not PI
 approval**; the entire redesign remains local.
 
@@ -206,7 +207,7 @@ in review data even when a journal DOI becomes the only reader-facing link.
 189 source records form 184 unique work groups. Source metadata suggests 132
 groups with a journal article, 10 preprint-only groups, 3 groups with both
 versions, and 42 other-only groups (including items that may not belong in a
-bibliography). The local website preview has 17 selected journal entries and
+bibliography). The local website preview has 18 selected journal entries and
 four preprint-only entries:
 [Accelerating Electrochemical Impedance Spectroscopy Measurements](https://arxiv.org/abs/2607.19307),
 [AutoRASOR](https://arxiv.org/abs/2609.22411),

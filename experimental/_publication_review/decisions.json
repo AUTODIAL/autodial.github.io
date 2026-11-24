@@ -183,6 +183,28 @@
       "overrides": {
         "year": 2027
       }
+    },
+    "doi:10.1016/j.apmt.2026.103178": {
+      "status": "approved",
+      "type": "journal",
+      "reviewer": "Website maintainer request; PI approval pending",
+      "note": "A colleague requested inclusion, and the publisher identifies AutoDIAL group members Changjun Cheng and Daniel Persaud as equal-contributing first authors with Jason Hattrick-Simpers as coauthor. ScienceDirect and Crossref verify the 2026 Applied Materials Today article, DOI, and publisher PII. The linked SSRN manuscript is already recorded as a version of the same work. Sources: https://www.sciencedirect.com/science/article/pii/S2352940726000934 ; https://api.crossref.org/works/10.1016/j.apmt.2026.103178",
+      "reviewed_on": "2026-11-24",
+      "overrides": {
+        "authors": [
+          "Changjun Cheng",
+          "Daniel Persaud",
+          "Kangming Li",
+          "Michael J. Moorehead",
+          "Natalie Page",
+          "Christian Lavoie",
+          "Beatriz Diaz Moreno",
+          "Adrien Couet",
+          "Samuel E Lofland",
+          "Jason Hattrick-Simpers"
+        ],
+        "landing_page_url": "https://www.sciencedirect.com/science/article/pii/S2352940726000934"
+      }
     }
   }
 }
