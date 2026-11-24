@@ -266,7 +266,7 @@ class SiteUiTest < Minitest::Test
 
   def test_news_navigation_and_video_playback
     navigate("/news")
-    browser.click(".news-card--post .news-card__title a")
+    browser.click("#news-welcome .news-card__title a")
     news = browser.execute(<<~JS)
       return {
         path: location.pathname,
