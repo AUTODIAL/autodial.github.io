@@ -16,6 +16,35 @@ We build tools, models, and systems that bridge the gap between theoretical pred
 - Trustworthy AI
 - Open Science
 
+<section class="home-news" aria-labelledby="home-news-title">
+  <div class="home-news__heading">
+    <h1 id="home-news-title">Latest News</h1>
+    <a href="{{ '/news' | relative_url }}">All news <span aria-hidden="true">→</span></a>
+  </div>
+  <div class="home-news__list">
+    {% assign recent_news = site.news | sort: 'date' | reverse %}
+    {% assign news_count = 0 %}
+    {% for item in recent_news %}
+      {% assign show_item = true %}
+      {% if item.kind == 'publication' %}
+        {% assign paper = site.data.publications | where: 'doi', item.doi | first %}
+        {% unless paper and paper.type == 'journal' %}{% assign show_item = false %}{% endunless %}
+      {% endif %}
+      {% if show_item %}
+        <article class="home-news__item">
+          <time datetime="{{ item.month }}">{{ item.month | append: '-01' | date: '%B %Y' }}</time>
+          <div>
+            <h3><a href="{{ item.url | relative_url }}">{{ item.title | escape }}</a></h3>
+            <p>{{ item.description | default: item.excerpt | default: item.content | strip_html | truncatewords: 28 | escape }}</p>
+          </div>
+        </article>
+        {% assign news_count = news_count | plus: 1 %}
+        {% if news_count == 3 %}{% break %}{% endif %}
+      {% endif %}
+    {% endfor %}
+  </div>
+</section>
+
 # Contact
 
 - Email: [jason.hattrick.simpers@utoronto.ca](mailto:jason.hattrick.simpers@utoronto.ca)

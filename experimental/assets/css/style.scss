@@ -486,6 +486,19 @@
 .news-card__links { display: flex; flex-wrap: wrap; gap: .5rem 1.2rem; margin-top: .8rem; }
 .news-feed .text-link { display: inline-block; font-weight: 700; margin-top: .35rem; }
 
+/* A short preview of the News collection on the homepage. */
+.home-news { margin: 2.5rem 0; }
+.home-news__heading { align-items: baseline; display: flex; flex-wrap: wrap; gap: .5rem 1rem; justify-content: space-between; margin-bottom: 1rem; }
+.home-news__heading h1 { font-size: 1.6rem; margin: 0; }
+.home-news__heading a { font-weight: 700; }
+.home-news__list { display: grid; gap: .75rem; }
+.home-news__item { background: #fff; border: 1px solid #d6d9da; border-left: 3px solid #c05219; display: grid; gap: 1rem; grid-template-columns: 7rem minmax(0, 1fr); padding: 1rem; }
+.home-news__item time { color: #8b350c; font-size: .82rem; font-weight: 700; text-transform: uppercase; }
+.home-news__item h3 { font-size: 1.1rem; line-height: 1.35; margin: 0 0 .35rem; }
+.home-news__item h3 a { color: inherit; }
+.home-news__item p { line-height: 1.5; margin: 0; }
+@media (max-width: 600px) { .home-news__item { gap: .35rem; grid-template-columns: 1fr; } }
+
 /* Curated Software page in the existing Slate layout. */
 .software-intro { margin-bottom: 2rem; }
 .software-intro h1 { margin-bottom: .6rem; }
