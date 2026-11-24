@@ -1,15 +1,16 @@
 # Publishing the original and experimental sites
 
-The local feature branch holds the provisional `experimental/` source. The
-public original site remains on `master`. The proposed Pages workflow builds
-the original source from `master` at `/` and the reviewed draft source at
-`/experimental/`, then uploads one static artifact. Its only trigger is a
-manual `workflow_dispatch`; it does not publish on push.
+The repository root holds the original site; `experimental/` holds the draft.
+The draft source may be on `master` after a merge or on a separate reviewed
+branch. The Pages workflow builds the original source from `master` at `/`
+and the selected draft source at `/experimental/`, then uploads one static
+artifact. Its only trigger is a manual `workflow_dispatch`; it does not
+publish on push.
 
 ## Verify the artifact locally
 
-From the feature branch, build the original site from a fresh `master`
-archive and the draft from the working tree:
+From the branch containing the reviewed draft, build the original site from
+a fresh `master` archive and the draft from the working tree:
 
 ```sh
 review_dir=$(mktemp -d)
@@ -32,8 +33,8 @@ The draft is built with `https://autodiallab.ca` as its site URL.
 1. Review the scientific content and all files in `experimental/`, including
    `_publication_review/`. Pushing a branch to a public repository makes its
    source files visible on GitHub, even when Jekyll excludes them from Pages.
-2. Push a reviewed draft commit only after authorization. Record its commit
-   SHA for the manual workflow input.
+2. Push reviewed changes only after authorization. If the draft remains on a
+   separate branch, record its commit SHA for the manual workflow input.
 3. Add `.github/workflows/pages-combined.yml` to the default branch. GitHub
    requires a manually dispatched workflow file to exist on that branch.
    This step does not itself trigger the workflow.
@@ -41,11 +42,18 @@ The draft is built with `https://autodiallab.ca` as its site URL.
    When authorized, change Pages **Source** to **GitHub Actions**, leaving
    `autodiallab.ca` and DNS unchanged. This replaces the branch-based
    publishing process; future site updates will need a workflow run.
-5. Manually run **Publish original and experimental sites** from Actions,
-   select `master` in the workflow branch dropdown, and enter the reviewed
-   draft branch or commit SHA as `draft_ref`. The workflow
-   checks out `master` separately for the original site and runs `make test`
-   before uploading and deploying the combined artifact.
+5. Manually run **Publish original and experimental sites** from Actions and
+   select `master` in the workflow branch dropdown. If the reviewed
+   `experimental/` changes have already been merged into `master`, leave
+   `draft_ref` blank. The workflow then builds the exact selected `master`
+   commit. Otherwise, enter the reviewed draft branch or commit SHA.
+   Check the **Record the draft commit** step to
+   confirm which source the workflow actually built. The workflow checks out
+   `master` separately for the original site and runs `make test` before
+   uploading and deploying the combined artifact. The workflow branch
+   dropdown only selects the workflow file; `draft_ref` selects the draft
+   content. An older remote feature branch can produce an older draft even
+   when `master` contains newer changes.
 6. Check `https://autodiallab.ca/` and
    `https://autodiallab.ca/experimental/`, including News, Publications,
    Software, member interactions, images, and links. Keep the draft URL off

@@ -6,9 +6,8 @@ name: Publish original and experimental sites
   workflow_dispatch:
     inputs:
       draft_ref:
-        description: Reviewed branch or commit containing experimental/
-        required: true
-        default: feature/incremental-publications-news-software
+        description: "Optional: reviewed draft branch or commit SHA; blank uses the selected master commit"
+        required: false
         type: string
 
 permissions:
@@ -28,8 +27,10 @@ jobs:
       - name: Check out the reviewed draft
         uses: actions/checkout@v6
         with:
-          ref: ${{ inputs.draft_ref }}
+          ref: ${{ inputs.draft_ref || github.sha }}
           persist-credentials: false
+      - name: Record the draft commit
+        run: "git log -1 --format='Draft commit: %H %s'"
       - name: Set up Ruby and Bundler
         uses: ruby/setup-ruby@v1
         with:
